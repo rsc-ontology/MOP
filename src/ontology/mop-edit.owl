@@ -93,7 +93,6 @@ Declaration(Class(obo:CHEBI_53521))
 Declaration(Class(obo:CHEBI_53522))
 Declaration(Class(obo:CHEBI_73474))
 Declaration(Class(obo:GO_0070206))
-Declaration(Class(obo:IAO_0000030))
 Declaration(Class(obo:MOP_0000000))
 Declaration(Class(obo:MOP_0000001))
 Declaration(Class(obo:MOP_0000002))
@@ -3735,10 +3734,6 @@ Declaration(ObjectProperty(obo:BFO_0000132))
 Declaration(ObjectProperty(obo:BFO_0000133))
 Declaration(ObjectProperty(obo:BFO_0000162))
 Declaration(ObjectProperty(obo:MOP_0000769))
-Declaration(AnnotationProperty(obo:IAO_0000115))
-Declaration(AnnotationProperty(obo:IAO_0000231))
-Declaration(AnnotationProperty(obo:IAO_0000412))
-Declaration(AnnotationProperty(obo:IAO_0100001))
 Declaration(AnnotationProperty(mop:FORMULA))
 Declaration(AnnotationProperty(mop:IUPAC_NAME))
 Declaration(AnnotationProperty(dcterms:creator))
@@ -3764,22 +3759,6 @@ Declaration(AnnotationProperty(rdfs:label))
 ############################
 #   Annotation Properties
 ############################
-
-# Annotation Property: obo:IAO_0000115 (definition)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
-
-# Annotation Property: obo:IAO_0000231 (terms merged)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000231 "terms merged")
-
-# Annotation Property: obo:IAO_0000412 (imported from)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
-
-# Annotation Property: obo:IAO_0100001 (term replaced by)
-
-AnnotationAssertion(rdfs:label obo:IAO_0100001 "term replaced by")
 
 # Annotation Property: mop:FORMULA (FORMULA)
 
