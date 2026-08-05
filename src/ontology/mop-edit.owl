@@ -3727,8 +3727,6 @@ Declaration(Class(obo:MOP_0006370))
 Declaration(Class(obo:MOP_0006371))
 Declaration(Class(obo:REX_0000368))
 Declaration(Class(obo:REX_0000369))
-Declaration(ObjectProperty(obo:BFO_0000055))
-Declaration(ObjectProperty(obo:BFO_0000057))
 Declaration(ObjectProperty(obo:BFO_0000077))
 Declaration(ObjectProperty(obo:BFO_0000078))
 Declaration(ObjectProperty(obo:BFO_0000117))
@@ -3737,7 +3735,6 @@ Declaration(ObjectProperty(obo:BFO_0000132))
 Declaration(ObjectProperty(obo:BFO_0000133))
 Declaration(ObjectProperty(obo:BFO_0000162))
 Declaration(ObjectProperty(obo:MOP_0000769))
-Declaration(ObjectProperty(obo:RO_0002213))
 Declaration(AnnotationProperty(obo:IAO_0000115))
 Declaration(AnnotationProperty(obo:IAO_0000231))
 Declaration(AnnotationProperty(obo:IAO_0000412))
@@ -3835,27 +3832,17 @@ AnnotationAssertion(rdfs:label oboInOwl:hasSynonymType "has_synonym_type")
 #   Object Properties
 ############################
 
-# Object Property: obo:BFO_0000055 (realizes)
-
-AnnotationAssertion(oboInOwl:id obo:BFO_0000055 "BFO:0000055")
-AnnotationAssertion(rdfs:label obo:BFO_0000055 "realizes")
-
-# Object Property: obo:BFO_0000057 (has_participant)
-
-AnnotationAssertion(oboInOwl:id obo:BFO_0000057 "BFO:0000057")
-AnnotationAssertion(rdfs:label obo:BFO_0000057 "has_participant")
-
 # Object Property: obo:BFO_0000077 (has participant beginning to exist)
 
 AnnotationAssertion(oboInOwl:id obo:BFO_0000077 "BFO:0000077")
 AnnotationAssertion(rdfs:label obo:BFO_0000077 "has participant beginning to exist")
-SubObjectPropertyOf(obo:BFO_0000077 obo:BFO_0000057)
+SubObjectPropertyOf(obo:BFO_0000077 obo:RO_0000057)
 
 # Object Property: obo:BFO_0000078 (has participant ceasing to exist)
 
 AnnotationAssertion(oboInOwl:id obo:BFO_0000078 "BFO:0000078")
 AnnotationAssertion(rdfs:label obo:BFO_0000078 "has participant ceasing to exist")
-SubObjectPropertyOf(obo:BFO_0000078 obo:BFO_0000057)
+SubObjectPropertyOf(obo:BFO_0000078 obo:RO_0000057)
 
 # Object Property: obo:BFO_0000117 (has occurrent part)
 
@@ -3888,12 +3875,6 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:MOP_0000769 "MOP:0000769")
 AnnotationAssertion(rdfs:label obo:MOP_0000769 "is_catalysis_of")
 SubObjectPropertyOf(obo:MOP_0000769 obo:RO_0002213)
-
-# Object Property: obo:RO_0002213 (positively_regulates)
-
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0002213 "x positively regulates y if and only if the progression of x increases the frequency, rate or extent of y")
-AnnotationAssertion(oboInOwl:id obo:RO_0002213 "RO:0002213")
-AnnotationAssertion(rdfs:label obo:RO_0002213 "positively_regulates")
 
 
 
@@ -4397,7 +4378,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:MOP_0000000 "MOP:0000000")
 AnnotationAssertion(rdfs:label obo:MOP_0000000 "borylation")
 SubClassOf(obo:MOP_0000000 obo:MOP_0000801)
-SubClassOf(obo:MOP_0000000 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_51870))
+SubClassOf(obo:MOP_0000000 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_51870))
 
 # Class: obo:MOP_0000001 (methanidylation)
 
@@ -4425,7 +4406,7 @@ AnnotationAssertion(oboInOwl:id obo:MOP_0000003 "MOP:0000003")
 AnnotationAssertion(rdfs:comment obo:MOP_0000003 "has_participant: CHEBI:42485")
 AnnotationAssertion(rdfs:label obo:MOP_0000003 "formylation")
 SubClassOf(obo:MOP_0000003 obo:MOP_0000029)
-SubClassOf(obo:MOP_0000003 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_42485))
+SubClassOf(obo:MOP_0000003 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_42485))
 
 # Class: obo:MOP_0000004 (acetonylation)
 
@@ -4650,7 +4631,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000028 "carboacylation")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000028 "MOP:0000028")
 AnnotationAssertion(rdfs:label obo:MOP_0000028 "carboacylation")
 SubClassOf(obo:MOP_0000028 obo:MOP_0000479)
-SubClassOf(obo:MOP_0000028 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_37838))
+SubClassOf(obo:MOP_0000028 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_37838))
 
 # Class: obo:MOP_0000029 (univalent carboacylation)
 
@@ -8089,7 +8070,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000411 "arylation")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000411 "MOP:0000411")
 AnnotationAssertion(rdfs:label obo:MOP_0000411 "arylation")
 SubClassOf(obo:MOP_0000411 obo:MOP_0000410)
-SubClassOf(obo:MOP_0000411 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_33338))
+SubClassOf(obo:MOP_0000411 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_33338))
 
 # Class: obo:MOP_0000412 (phenylation)
 
@@ -8705,7 +8686,7 @@ AnnotationAssertion(oboInOwl:id obo:MOP_0000479 "MOP:0000479")
 AnnotationAssertion(rdfs:comment obo:MOP_0000479 "you probably want \"carboacylation\", MOP:0000028, here")
 AnnotationAssertion(rdfs:label obo:MOP_0000479 "acylation")
 SubClassOf(obo:MOP_0000479 obo:MOP_0000800)
-SubClassOf(obo:MOP_0000479 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_22221))
+SubClassOf(obo:MOP_0000479 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_22221))
 
 # Class: obo:MOP_0000480 (organoheterylation)
 
@@ -9243,9 +9224,9 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000539 "sulfonylation")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000539 "MOP:0000539")
 AnnotationAssertion(rdfs:comment obo:MOP_0000539 "has_participant: CHEBI:51100; has_participant: CHEBI:29825")
 AnnotationAssertion(rdfs:label obo:MOP_0000539 "sulfonylation")
-EquivalentClasses(obo:MOP_0000539 ObjectIntersectionOf(obo:MOP_0000798 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_51100)))
+EquivalentClasses(obo:MOP_0000539 ObjectIntersectionOf(obo:MOP_0000798 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_51100)))
 SubClassOf(obo:MOP_0000539 obo:MOP_0000798)
-SubClassOf(obo:MOP_0000539 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_51100))
+SubClassOf(obo:MOP_0000539 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_51100))
 
 # Class: obo:MOP_0000540 (tosylation)
 
@@ -9734,7 +9715,7 @@ Thus the \"has_participant some 'carboxy group'\" axiom, which was not yet prese
 The only RXNO subclass 'Kolbe-Schmitt reaction' (RXNO:0000182) of 'carboxylation' was also moved to be correctly subsumed in RXNO.")
 AnnotationAssertion(rdfs:label obo:MOP_0000591 "carboxylation")
 SubClassOf(obo:MOP_0000591 obo:MOP_0000479)
-SubClassOf(obo:MOP_0000591 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_46883))
+SubClassOf(obo:MOP_0000591 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_46883))
 
 # Class: obo:MOP_0000592 (C-carboxylation)
 
@@ -9778,7 +9759,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:xp") obo:IAO_0000115 obo:
 AnnotationAssertion(oboInOwl:id obo:MOP_0000596 "MOP:0000596")
 AnnotationAssertion(rdfs:label obo:MOP_0000596 "pseudohalogenation")
 SubClassOf(obo:MOP_0000596 obo:MOP_0000566)
-SubClassOf(obo:MOP_0000596 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_36823))
+SubClassOf(obo:MOP_0000596 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_36823))
 
 # Class: obo:MOP_0000597 (cyanation)
 
@@ -9786,7 +9767,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:xp") obo:IAO_0000115 obo:
 AnnotationAssertion(oboInOwl:id obo:MOP_0000597 "MOP:0000597")
 AnnotationAssertion(rdfs:label obo:MOP_0000597 "cyanation")
 SubClassOf(obo:MOP_0000597 obo:MOP_0000596)
-SubClassOf(obo:MOP_0000597 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_48819))
+SubClassOf(obo:MOP_0000597 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_48819))
 
 # Class: obo:MOP_0000598 (azidation)
 
@@ -9794,7 +9775,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:xp") obo:IAO_0000115 obo:
 AnnotationAssertion(oboInOwl:id obo:MOP_0000598 "MOP:0000598")
 AnnotationAssertion(rdfs:label obo:MOP_0000598 "azidation")
 SubClassOf(obo:MOP_0000598 obo:MOP_0000596)
-SubClassOf(obo:MOP_0000598 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_36825))
+SubClassOf(obo:MOP_0000598 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_36825))
 
 # Class: obo:MOP_0000599 (isocyanation)
 
@@ -9802,7 +9783,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:xp") obo:IAO_0000115 obo:
 AnnotationAssertion(oboInOwl:id obo:MOP_0000599 "MOP:0000599")
 AnnotationAssertion(rdfs:label obo:MOP_0000599 "isocyanation")
 SubClassOf(obo:MOP_0000599 obo:MOP_0000596)
-SubClassOf(obo:MOP_0000599 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_36826))
+SubClassOf(obo:MOP_0000599 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_36826))
 
 # Class: obo:MOP_0000600 (isocyanatation)
 
@@ -9810,7 +9791,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:xp") obo:IAO_0000115 obo:
 AnnotationAssertion(oboInOwl:id obo:MOP_0000600 "MOP:0000600")
 AnnotationAssertion(rdfs:label obo:MOP_0000600 "isocyanatation")
 SubClassOf(obo:MOP_0000600 obo:MOP_0000596)
-SubClassOf(obo:MOP_0000600 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_29810))
+SubClassOf(obo:MOP_0000600 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_29810))
 
 # Class: obo:MOP_0000601 (isothiocyanatation)
 
@@ -9818,7 +9799,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:xp") obo:IAO_0000115 obo:
 AnnotationAssertion(oboInOwl:id obo:MOP_0000601 "MOP:0000601")
 AnnotationAssertion(rdfs:label obo:MOP_0000601 "isothiocyanatation")
 SubClassOf(obo:MOP_0000601 obo:MOP_0000596)
-SubClassOf(obo:MOP_0000601 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_29441))
+SubClassOf(obo:MOP_0000601 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_29441))
 
 # Class: obo:MOP_0000602 (isoselenocyanatation)
 
@@ -9826,7 +9807,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:xp") obo:IAO_0000115 obo:
 AnnotationAssertion(oboInOwl:id obo:MOP_0000602 "MOP:0000602")
 AnnotationAssertion(rdfs:label obo:MOP_0000602 "isoselenocyanatation")
 SubClassOf(obo:MOP_0000602 obo:MOP_0000596)
-SubClassOf(obo:MOP_0000602 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_29444))
+SubClassOf(obo:MOP_0000602 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_29444))
 
 # Class: obo:MOP_0000603 (isotellurocyanatation)
 
@@ -9834,7 +9815,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:xp") obo:IAO_0000115 obo:
 AnnotationAssertion(oboInOwl:id obo:MOP_0000603 "MOP:0000603")
 AnnotationAssertion(rdfs:label obo:MOP_0000603 "isotellurocyanatation")
 SubClassOf(obo:MOP_0000603 obo:MOP_0000596)
-SubClassOf(obo:MOP_0000603 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_36827))
+SubClassOf(obo:MOP_0000603 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_36827))
 
 # Class: obo:MOP_0000604 (metal chelation)
 
@@ -10269,7 +10250,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:MOP_0000650 "MOP:0000650")
 AnnotationAssertion(rdfs:label obo:MOP_0000650 "amination")
 SubClassOf(obo:MOP_0000650 obo:MOP_0000802)
-SubClassOf(obo:MOP_0000650 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_51142))
+SubClassOf(obo:MOP_0000650 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_51142))
 
 # Class: obo:MOP_0000651 (deamination)
 
@@ -10277,7 +10258,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:MOP_0000651 "MOP:0000651")
 AnnotationAssertion(rdfs:label obo:MOP_0000651 "deamination")
 SubClassOf(obo:MOP_0000651 obo:MOP_0000567)
-SubClassOf(obo:MOP_0000651 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_51142))
+SubClassOf(obo:MOP_0000651 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_51142))
 
 # Class: obo:MOP_0000652 (N-amination)
 
@@ -10476,7 +10457,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:MOP_0000673 "MOP:0000673")
 AnnotationAssertion(rdfs:label obo:MOP_0000673 "hydroxylation")
 SubClassOf(obo:MOP_0000673 obo:MOP_0000566)
-SubClassOf(obo:MOP_0000673 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_43176))
+SubClassOf(obo:MOP_0000673 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_43176))
 
 # Class: obo:MOP_0000674 (metallation)
 
@@ -10539,7 +10520,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldb
 AnnotationAssertion(oboInOwl:id obo:MOP_0000680 "MOP:0000680")
 AnnotationAssertion(rdfs:label obo:MOP_0000680 "proton transfer")
 SubClassOf(obo:MOP_0000680 obo:MOP_0000682)
-SubClassOf(obo:MOP_0000680 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_24636))
+SubClassOf(obo:MOP_0000680 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_24636))
 
 # Class: obo:MOP_0000681 (autoprotolysis)
 
@@ -10554,7 +10535,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:MOP_0000682 "MOP:0000682")
 AnnotationAssertion(rdfs:label obo:MOP_0000682 "hydron transfer")
 SubClassOf(obo:MOP_0000682 obo:MOP_0000543)
-SubClassOf(obo:MOP_0000682 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_15378))
+SubClassOf(obo:MOP_0000682 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_15378))
 
 # Class: obo:MOP_0000683 (deuteron transfer)
 
@@ -10562,7 +10543,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:MOP_0000683 "MOP:0000683")
 AnnotationAssertion(rdfs:label obo:MOP_0000683 "deuteron transfer")
 SubClassOf(obo:MOP_0000683 obo:MOP_0000682)
-SubClassOf(obo:MOP_0000683 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_29233))
+SubClassOf(obo:MOP_0000683 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_29233))
 
 # Class: obo:MOP_0000684 (atom-transfer radical polymerisation)
 
@@ -10755,7 +10736,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:MOP_0000703 "MOP:0000703")
 AnnotationAssertion(rdfs:label obo:MOP_0000703 "N-deacetylation")
 SubClassOf(obo:MOP_0000703 obo:MOP_0001030)
-SubClassOf(obo:MOP_0000703 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_40574))
+SubClassOf(obo:MOP_0000703 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_40574))
 
 # Class: obo:MOP_0000704 (O-deacetylation)
 
@@ -10763,7 +10744,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:MOP_0000704 "MOP:0000704")
 AnnotationAssertion(rdfs:label obo:MOP_0000704 "O-deacetylation")
 SubClassOf(obo:MOP_0000704 obo:MOP_0001030)
-SubClassOf(obo:MOP_0000704 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_40574))
+SubClassOf(obo:MOP_0000704 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_40574))
 
 # Class: obo:MOP_0000705 (oxidation at sulfur)
 
@@ -10844,7 +10825,7 @@ AnnotationAssertion(oboInOwl:id obo:MOP_0000714 "MOP:0000714")
 AnnotationAssertion(rdfs:comment obo:MOP_0000714 "Typically, weakly bound ligands are replaced by more strongly bound ones, so that the resulting complex becomes thermodynamically more stable.")
 AnnotationAssertion(rdfs:label obo:MOP_0000714 "ligand exchange reaction"@en)
 SubClassOf(obo:MOP_0000714 obo:MOP_0000543)
-SubClassOf(obo:MOP_0000714 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_52214))
+SubClassOf(obo:MOP_0000714 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_52214))
 
 # Class: obo:MOP_0000715 (trimerization)
 
@@ -11615,7 +11596,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:MOP_0000802 "MOP:0000802")
 AnnotationAssertion(rdfs:label obo:MOP_0000802 "formation of covalent bond with nitrogen centre")
 SubClassOf(obo:MOP_0000802 obo:MOP_0000566)
-SubClassOf(obo:MOP_0000802 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_29785))
+SubClassOf(obo:MOP_0000802 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_29785))
 
 # Class: obo:MOP_0000803 (formation of covalent bond with oxygen centre)
 
@@ -16271,8 +16252,8 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:MOP_0001713 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:MOP_0001713 "MOP:0001713")
 AnnotationAssertion(rdfs:label obo:MOP_0001713 "decarboxylation")
 SubClassOf(obo:MOP_0001713 obo:MOP_0001458)
-SubClassOf(obo:MOP_0001713 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_46883))
 SubClassOf(obo:MOP_0001713 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_16526))
+SubClassOf(obo:MOP_0001713 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_46883))
 
 # Class: obo:MOP_0002000 (N-borylation)
 
