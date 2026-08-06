@@ -3654,8 +3654,6 @@ Declaration(Class(obo:MOP_0005561))
 Declaration(Class(obo:MOP_0006369))
 Declaration(Class(obo:MOP_0006370))
 Declaration(Class(obo:MOP_0006371))
-Declaration(Class(obo:REX_0000368))
-Declaration(Class(obo:REX_0000369))
 Declaration(ObjectProperty(obo:BFO_0000077))
 Declaration(ObjectProperty(obo:BFO_0000078))
 Declaration(ObjectProperty(obo:BFO_0000117))
@@ -33619,18 +33617,6 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:MOP_0006371 "MOP")
 AnnotationAssertion(oboInOwl:id obo:MOP_0006371 "MOP:0006371")
 AnnotationAssertion(rdfs:label obo:MOP_0006371 "[3+2] cycloaddition")
 SubClassOf(obo:MOP_0006371 obo:MOP_0000562)
-
-# Class: obo:REX_0000368 (obo:REX_0000368)
-
-AnnotationAssertion(obo:IAO_0000231 obo:REX_0000368 obo:IAO_0000227)
-AnnotationAssertion(obo:IAO_0100001 obo:REX_0000368 obo:MOP_0000767)
-AnnotationAssertion(owl:deprecated obo:REX_0000368 "true"^^xsd:boolean)
-
-# Class: obo:REX_0000369 (obo:REX_0000369)
-
-AnnotationAssertion(obo:IAO_0000231 obo:REX_0000369 obo:IAO_0000227)
-AnnotationAssertion(obo:IAO_0100001 obo:REX_0000369 obo:MOP_0000768)
-AnnotationAssertion(owl:deprecated obo:REX_0000369 "true"^^xsd:boolean)
 
 
 )
