@@ -3739,17 +3739,23 @@ AnnotationAssertion(rdfs:label oboInOwl:hasSynonymType "has_synonym_type")
 #   Object Properties
 ############################
 
-# Object Property: obo:BFO_0000077 (has participant beginning to exist)
+# Object Property: obo:BFO_0000077 (obsolete_has participant beginning to exist)
 
+AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000077 "deprecated in favor of RO:has primary output")
+AnnotationAssertion(obo:IAO_0000231 obo:BFO_0000077 obo:IAO_0000228)
+AnnotationAssertion(obo:IAO_0100001 obo:BFO_0000077 obo:RO_0004008)
 AnnotationAssertion(oboInOwl:id obo:BFO_0000077 "BFO:0000077")
-AnnotationAssertion(rdfs:label obo:BFO_0000077 "has participant beginning to exist")
-SubObjectPropertyOf(obo:BFO_0000077 obo:RO_0000057)
+AnnotationAssertion(rdfs:label obo:BFO_0000077 "obsolete_has participant beginning to exist")
+AnnotationAssertion(owl:deprecated obo:BFO_0000077 "true"^^xsd:boolean)
 
-# Object Property: obo:BFO_0000078 (has participant ceasing to exist)
+# Object Property: obo:BFO_0000078 (obsolete_has participant ceasing to exist)
 
+AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000078 "deprecated in favor of RO:has primary input")
+AnnotationAssertion(obo:IAO_0000231 obo:BFO_0000078 obo:IAO_0000228)
+AnnotationAssertion(obo:IAO_0100001 obo:BFO_0000078 obo:RO_0004009)
 AnnotationAssertion(oboInOwl:id obo:BFO_0000078 "BFO:0000078")
-AnnotationAssertion(rdfs:label obo:BFO_0000078 "has participant ceasing to exist")
-SubObjectPropertyOf(obo:BFO_0000078 obo:RO_0000057)
+AnnotationAssertion(rdfs:label obo:BFO_0000078 "obsolete_has participant ceasing to exist")
+AnnotationAssertion(owl:deprecated obo:BFO_0000078 "true"^^xsd:boolean)
 
 # Object Property: obo:BFO_0000117 (has occurrent part)
 
@@ -8840,7 +8846,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000561 "cyclisation")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000561 "MOP:0000561")
 AnnotationAssertion(rdfs:label obo:MOP_0000561 "cyclization")
 SubClassOf(obo:MOP_0000561 obo:MOP_0000543)
-SubClassOf(obo:MOP_0000561 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_33595))
+SubClassOf(obo:MOP_0000561 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_33595))
 
 # Class: obo:MOP_0000562 (cycloaddition)
 
@@ -8929,8 +8935,8 @@ AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000571 "2009-06-01T06:07:02Z
 AnnotationAssertion(oboInOwl:id obo:MOP_0000571 "MOP:0000571")
 AnnotationAssertion(rdfs:label obo:MOP_0000571 "aldehyde reduction")
 SubClassOf(obo:MOP_0000571 obo:MOP_0000569)
-SubClassOf(obo:MOP_0000571 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_15734))
-SubClassOf(obo:MOP_0000571 ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_17478))
+SubClassOf(obo:MOP_0000571 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_15734))
+SubClassOf(obo:MOP_0000571 ObjectSomeValuesFrom(obo:RO_0004009 obo:CHEBI_17478))
 
 # Class: obo:MOP_0000572 (alcohol oxidation)
 
@@ -8940,7 +8946,7 @@ AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000572 "2009-06-01T06:10:35Z
 AnnotationAssertion(oboInOwl:id obo:MOP_0000572 "MOP:0000572")
 AnnotationAssertion(rdfs:label obo:MOP_0000572 "alcohol oxidation")
 SubClassOf(obo:MOP_0000572 obo:MOP_0000568)
-SubClassOf(obo:MOP_0000572 ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_30879))
+SubClassOf(obo:MOP_0000572 ObjectSomeValuesFrom(obo:RO_0004009 obo:CHEBI_30879))
 
 # Class: obo:MOP_0000573 (primary alcohol oxidation to aldehyde)
 
@@ -8951,8 +8957,8 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000573 "primary alcohol ox
 AnnotationAssertion(oboInOwl:id obo:MOP_0000573 "MOP:0000573")
 AnnotationAssertion(rdfs:label obo:MOP_0000573 "primary alcohol oxidation to aldehyde")
 SubClassOf(obo:MOP_0000573 obo:MOP_0000572)
-SubClassOf(obo:MOP_0000573 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_17478))
-SubClassOf(obo:MOP_0000573 ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_15734))
+SubClassOf(obo:MOP_0000573 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_17478))
+SubClassOf(obo:MOP_0000573 ObjectSomeValuesFrom(obo:RO_0004009 obo:CHEBI_15734))
 
 # Class: obo:MOP_0000574 (secondary alcohol oxidation to ketone)
 
@@ -8963,8 +8969,8 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000574 "secondary alcohol 
 AnnotationAssertion(oboInOwl:id obo:MOP_0000574 "MOP:0000574")
 AnnotationAssertion(rdfs:label obo:MOP_0000574 "secondary alcohol oxidation to ketone")
 SubClassOf(obo:MOP_0000574 obo:MOP_0000572)
-SubClassOf(obo:MOP_0000574 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_17087))
-SubClassOf(obo:MOP_0000574 ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_35681))
+SubClassOf(obo:MOP_0000574 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_17087))
+SubClassOf(obo:MOP_0000574 ObjectSomeValuesFrom(obo:RO_0004009 obo:CHEBI_35681))
 
 # Class: obo:MOP_0000575 (amine oxidation)
 
@@ -8993,7 +8999,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000577 "reduction of ester
 AnnotationAssertion(oboInOwl:id obo:MOP_0000577 "MOP:0000577")
 AnnotationAssertion(rdfs:label obo:MOP_0000577 "ester reduction")
 SubClassOf(obo:MOP_0000577 obo:MOP_0000569)
-SubClassOf(obo:MOP_0000577 ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_33308))
+SubClassOf(obo:MOP_0000577 ObjectSomeValuesFrom(obo:RO_0004009 obo:CHEBI_33308))
 
 # Class: obo:MOP_0000578 (ester reduction to aldehyde)
 
@@ -9005,7 +9011,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000578 "reduction of ester
 AnnotationAssertion(oboInOwl:id obo:MOP_0000578 "MOP:0000578")
 AnnotationAssertion(rdfs:label obo:MOP_0000578 "ester reduction to aldehyde")
 SubClassOf(obo:MOP_0000578 obo:MOP_0000577)
-SubClassOf(obo:MOP_0000578 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_17478))
+SubClassOf(obo:MOP_0000578 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_17478))
 
 # Class: obo:MOP_0000579 (ester reduction to primary alcohol)
 
@@ -9017,7 +9023,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000579 "reduction of ester
 AnnotationAssertion(oboInOwl:id obo:MOP_0000579 "MOP:0000579")
 AnnotationAssertion(rdfs:label obo:MOP_0000579 "ester reduction to primary alcohol")
 SubClassOf(obo:MOP_0000579 obo:MOP_0000577)
-SubClassOf(obo:MOP_0000579 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_15734))
+SubClassOf(obo:MOP_0000579 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_15734))
 
 # Class: obo:MOP_0000580 (ketone reduction)
 
@@ -9029,8 +9035,8 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000580 "reduction of keton
 AnnotationAssertion(oboInOwl:id obo:MOP_0000580 "MOP:0000580")
 AnnotationAssertion(rdfs:label obo:MOP_0000580 "ketone reduction")
 SubClassOf(obo:MOP_0000580 obo:MOP_0000569)
-SubClassOf(obo:MOP_0000580 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_35681))
-SubClassOf(obo:MOP_0000580 ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_17087))
+SubClassOf(obo:MOP_0000580 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_35681))
+SubClassOf(obo:MOP_0000580 ObjectSomeValuesFrom(obo:RO_0004009 obo:CHEBI_17087))
 
 # Class: obo:MOP_0000581 (alkene oxidation)
 
@@ -9073,7 +9079,7 @@ AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000584 "2009-06-02T06:02:46Z
 AnnotationAssertion(oboInOwl:id obo:MOP_0000584 "MOP:0000584")
 AnnotationAssertion(rdfs:label obo:MOP_0000584 "primary alkene oxidation to carboxylic acid and carbon dioxide")
 SubClassOf(obo:MOP_0000584 obo:MOP_0000708)
-SubClassOf(obo:MOP_0000584 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_16526))
+SubClassOf(obo:MOP_0000584 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_16526))
 
 # Class: obo:MOP_0000585 (tertiary alkene oxidation to carboxylic acid and ketone)
 
@@ -9083,8 +9089,8 @@ AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000585 "2009-06-02T06:04:14Z
 AnnotationAssertion(oboInOwl:id obo:MOP_0000585 "MOP:0000585")
 AnnotationAssertion(rdfs:label obo:MOP_0000585 "tertiary alkene oxidation to carboxylic acid and ketone")
 SubClassOf(obo:MOP_0000585 obo:MOP_0000708)
-SubClassOf(obo:MOP_0000585 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_17087))
-SubClassOf(obo:MOP_0000585 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_33575))
+SubClassOf(obo:MOP_0000585 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_17087))
+SubClassOf(obo:MOP_0000585 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_33575))
 
 # Class: obo:MOP_0000586 (secondary, non-terminal alkene oxidation to aldehydes)
 
@@ -9094,7 +9100,7 @@ AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000586 "2009-06-02T06:06:23Z
 AnnotationAssertion(oboInOwl:id obo:MOP_0000586 "MOP:0000586")
 AnnotationAssertion(rdfs:label obo:MOP_0000586 "secondary, non-terminal alkene oxidation to aldehydes")
 SubClassOf(obo:MOP_0000586 obo:MOP_0000708)
-SubClassOf(obo:MOP_0000586 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_17478))
+SubClassOf(obo:MOP_0000586 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_17478))
 
 # Class: obo:MOP_0000587 (secondary terminal alkene oxidation to ketone and carbon dioxide)
 
@@ -9104,8 +9110,8 @@ AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000587 "2009-06-02T06:07:44Z
 AnnotationAssertion(oboInOwl:id obo:MOP_0000587 "MOP:0000587")
 AnnotationAssertion(rdfs:label obo:MOP_0000587 "secondary terminal alkene oxidation to ketone and carbon dioxide")
 SubClassOf(obo:MOP_0000587 obo:MOP_0000708)
-SubClassOf(obo:MOP_0000587 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_16526))
-SubClassOf(obo:MOP_0000587 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_17087))
+SubClassOf(obo:MOP_0000587 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_16526))
+SubClassOf(obo:MOP_0000587 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_17087))
 
 # Class: obo:MOP_0000588 (quaternary alkene oxidation to ketones)
 
@@ -9115,7 +9121,7 @@ AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000588 "2009-06-02T06:09:24Z
 AnnotationAssertion(oboInOwl:id obo:MOP_0000588 "MOP:0000588")
 AnnotationAssertion(rdfs:label obo:MOP_0000588 "quaternary alkene oxidation to ketones")
 SubClassOf(obo:MOP_0000588 obo:MOP_0000708)
-SubClassOf(obo:MOP_0000588 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_17087))
+SubClassOf(obo:MOP_0000588 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_17087))
 
 # Class: obo:MOP_0000589 (hydrogenation)
 
@@ -9487,9 +9493,9 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldb
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000629 "polymerization")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000629 "MOP:0000629")
 AnnotationAssertion(rdfs:label obo:MOP_0000629 "polymerisation")
-EquivalentClasses(obo:MOP_0000629 ObjectIntersectionOf(obo:MOP_0000543 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_33839)))
+EquivalentClasses(obo:MOP_0000629 ObjectIntersectionOf(obo:MOP_0000543 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_33839)))
 SubClassOf(obo:MOP_0000629 obo:MOP_0000543)
-SubClassOf(obo:MOP_0000629 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_33839))
+SubClassOf(obo:MOP_0000629 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_33839))
 
 # Class: obo:MOP_0000630 (depolymerisation)
 
@@ -9505,9 +9511,9 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldb
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000631 "copolymerization")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000631 "MOP:0000631")
 AnnotationAssertion(rdfs:label obo:MOP_0000631 "copolymerisation")
-EquivalentClasses(obo:MOP_0000631 ObjectIntersectionOf(obo:MOP_0000629 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53310)))
+EquivalentClasses(obo:MOP_0000631 ObjectIntersectionOf(obo:MOP_0000629 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53310)))
 SubClassOf(obo:MOP_0000631 obo:MOP_0000629)
-SubClassOf(obo:MOP_0000631 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53310))
+SubClassOf(obo:MOP_0000631 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53310))
 
 # Class: obo:MOP_0000632 (condensation polymerisation)
 
@@ -9515,10 +9521,10 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldb
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000632 "condensation polymerization")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000632 "MOP:0000632")
 AnnotationAssertion(rdfs:label obo:MOP_0000632 "condensation polymerisation")
-EquivalentClasses(obo:MOP_0000632 ObjectIntersectionOf(obo:MOP_0000629 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_33839) ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000627)))
+EquivalentClasses(obo:MOP_0000632 ObjectIntersectionOf(obo:MOP_0000629 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000627) ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_33839)))
 SubClassOf(obo:MOP_0000632 obo:MOP_0000629)
-SubClassOf(obo:MOP_0000632 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_33839))
 SubClassOf(obo:MOP_0000632 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000627))
+SubClassOf(obo:MOP_0000632 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_33839))
 
 # Class: obo:MOP_0000633 (homopolymerisation)
 
@@ -9526,9 +9532,9 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldb
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000633 "homopolymerization")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000633 "MOP:0000633")
 AnnotationAssertion(rdfs:label obo:MOP_0000633 "homopolymerisation")
-EquivalentClasses(obo:MOP_0000633 ObjectIntersectionOf(obo:MOP_0000629 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_37997)))
+EquivalentClasses(obo:MOP_0000633 ObjectIntersectionOf(obo:MOP_0000629 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_37997)))
 SubClassOf(obo:MOP_0000633 obo:MOP_0000629)
-SubClassOf(obo:MOP_0000633 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_37997))
+SubClassOf(obo:MOP_0000633 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_37997))
 
 # Class: obo:MOP_0000634 (chain polymerisation)
 
@@ -9536,11 +9542,11 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldb
 AnnotationAssertion(oboInOwl:id obo:MOP_0000634 "MOP:0000634")
 AnnotationAssertion(rdfs:comment obo:MOP_0000634 "has_part only some particular polymerisation step rather than some other polymerisation step.")
 AnnotationAssertion(rdfs:label obo:MOP_0000634 "chain polymerisation")
-EquivalentClasses(obo:MOP_0000634 ObjectIntersectionOf(obo:MOP_0000635 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_33839)))
+EquivalentClasses(obo:MOP_0000634 ObjectIntersectionOf(obo:MOP_0000635 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_33839)))
 SubClassOf(obo:MOP_0000634 obo:MOP_0000629)
 SubClassOf(obo:MOP_0000634 obo:MOP_0000635)
-SubClassOf(obo:MOP_0000634 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_33839))
 SubClassOf(obo:MOP_0000634 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000640))
+SubClassOf(obo:MOP_0000634 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_33839))
 
 # Class: obo:MOP_0000635 (chain reaction)
 
@@ -9649,10 +9655,10 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000647 "ionic copolymerization")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000647 "MOP:0000647")
 AnnotationAssertion(rdfs:label obo:MOP_0000647 "ionic copolymerisation")
-EquivalentClasses(obo:MOP_0000647 ObjectIntersectionOf(obo:MOP_0000637 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53310)))
+EquivalentClasses(obo:MOP_0000647 ObjectIntersectionOf(obo:MOP_0000637 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53310)))
 SubClassOf(obo:MOP_0000647 obo:MOP_0000631)
 SubClassOf(obo:MOP_0000647 obo:MOP_0000637)
-SubClassOf(obo:MOP_0000647 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53310))
+SubClassOf(obo:MOP_0000647 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53310))
 
 # Class: obo:MOP_0000648 (radical copolymerisation)
 
@@ -9662,20 +9668,20 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000648 "free radical copol
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000648 "radical copolymerization")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000648 "MOP:0000648")
 AnnotationAssertion(rdfs:label obo:MOP_0000648 "radical copolymerisation")
-EquivalentClasses(obo:MOP_0000648 ObjectIntersectionOf(obo:MOP_0000639 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53310)))
+EquivalentClasses(obo:MOP_0000648 ObjectIntersectionOf(obo:MOP_0000639 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53310)))
 SubClassOf(obo:MOP_0000648 obo:MOP_0000631)
 SubClassOf(obo:MOP_0000648 obo:MOP_0000639)
-SubClassOf(obo:MOP_0000648 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53310))
+SubClassOf(obo:MOP_0000648 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53310))
 
 # Class: obo:MOP_0000649 (living copolymerisation)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0000649 "A living polymerisation where the product is a copolymer.")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000649 "MOP:0000649")
 AnnotationAssertion(rdfs:label obo:MOP_0000649 "living copolymerisation")
-EquivalentClasses(obo:MOP_0000649 ObjectIntersectionOf(obo:MOP_0000646 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53310)))
+EquivalentClasses(obo:MOP_0000649 ObjectIntersectionOf(obo:MOP_0000646 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53310)))
 SubClassOf(obo:MOP_0000649 obo:MOP_0000631)
 SubClassOf(obo:MOP_0000649 obo:MOP_0000646)
-SubClassOf(obo:MOP_0000649 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53310))
+SubClassOf(obo:MOP_0000649 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53310))
 
 # Class: obo:MOP_0000650 (amination)
 
@@ -9870,7 +9876,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:MOP_0000671 "MOP:0000671")
 AnnotationAssertion(rdfs:label obo:MOP_0000671 "epoxidation")
 SubClassOf(obo:MOP_0000671 obo:MOP_0000561)
-SubClassOf(obo:MOP_0000671 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_32955))
+SubClassOf(obo:MOP_0000671 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_32955))
 
 # Class: obo:MOP_0000672 (enolization)
 
@@ -9878,11 +9884,11 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000672 "enolisation")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000672 "MOP:0000672")
 AnnotationAssertion(rdfs:label obo:MOP_0000672 "enolization")
-EquivalentClasses(obo:MOP_0000672 ObjectIntersectionOf(obo:MOP_0000725 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_33823) ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_36586)))
+EquivalentClasses(obo:MOP_0000672 ObjectIntersectionOf(obo:MOP_0000725 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_33823) ObjectSomeValuesFrom(obo:RO_0004009 obo:CHEBI_36586)))
 SubClassOf(obo:MOP_0000672 obo:MOP_0000725)
 SubClassOf(obo:MOP_0000672 ObjectSomeValuesFrom(obo:BFO_0000055 obo:MOP_0000717))
-SubClassOf(obo:MOP_0000672 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_33823))
-SubClassOf(obo:MOP_0000672 ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_36586))
+SubClassOf(obo:MOP_0000672 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_33823))
+SubClassOf(obo:MOP_0000672 ObjectSomeValuesFrom(obo:RO_0004009 obo:CHEBI_36586))
 
 # Class: obo:MOP_0000673 (hydroxylation)
 
@@ -10020,10 +10026,10 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000688 "ring-opening copolymerization")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000688 "MOP:0000688")
 AnnotationAssertion(rdfs:label obo:MOP_0000688 "ring-opening copolymerisation")
-EquivalentClasses(obo:MOP_0000688 ObjectIntersectionOf(obo:MOP_0000686 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53310)))
+EquivalentClasses(obo:MOP_0000688 ObjectIntersectionOf(obo:MOP_0000686 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53310)))
 SubClassOf(obo:MOP_0000688 obo:MOP_0000631)
 SubClassOf(obo:MOP_0000688 obo:MOP_0000686)
-SubClassOf(obo:MOP_0000688 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53310))
+SubClassOf(obo:MOP_0000688 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53310))
 
 # Class: obo:MOP_0000689 (reversible addition-fragmentation chain transfer polymerisation)
 
@@ -10069,9 +10075,9 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldb
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000693 "alternating copolymerization")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000693 "MOP:0000693")
 AnnotationAssertion(rdfs:label obo:MOP_0000693 "alternating copolymerisation")
-EquivalentClasses(obo:MOP_0000693 ObjectIntersectionOf(obo:MOP_0000631 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53517)))
+EquivalentClasses(obo:MOP_0000693 ObjectIntersectionOf(obo:MOP_0000631 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53517)))
 SubClassOf(obo:MOP_0000693 obo:MOP_0000631)
-SubClassOf(obo:MOP_0000693 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53517))
+SubClassOf(obo:MOP_0000693 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53517))
 
 # Class: obo:MOP_0000694 (graft copolymerisation)
 
@@ -10079,9 +10085,9 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldb
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000694 "graft copolymerization")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000694 "MOP:0000694")
 AnnotationAssertion(rdfs:label obo:MOP_0000694 "graft copolymerisation")
-EquivalentClasses(obo:MOP_0000694 ObjectIntersectionOf(obo:MOP_0000631 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53519)))
+EquivalentClasses(obo:MOP_0000694 ObjectIntersectionOf(obo:MOP_0000631 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53519)))
 SubClassOf(obo:MOP_0000694 obo:MOP_0000631)
-SubClassOf(obo:MOP_0000694 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53519))
+SubClassOf(obo:MOP_0000694 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53519))
 
 # Class: obo:MOP_0000695 (periodic copolymerisation)
 
@@ -10089,9 +10095,9 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldb
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000695 "periodic copolymerization")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000695 "MOP:0000695")
 AnnotationAssertion(rdfs:label obo:MOP_0000695 "periodic copolymerisation")
-EquivalentClasses(obo:MOP_0000695 ObjectIntersectionOf(obo:MOP_0000631 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53520)))
+EquivalentClasses(obo:MOP_0000695 ObjectIntersectionOf(obo:MOP_0000631 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53520)))
 SubClassOf(obo:MOP_0000695 obo:MOP_0000631)
-SubClassOf(obo:MOP_0000695 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53520))
+SubClassOf(obo:MOP_0000695 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53520))
 
 # Class: obo:MOP_0000696 (random copolymerisation)
 
@@ -10099,9 +10105,9 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldb
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000696 "random copolymerization")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000696 "MOP:0000696")
 AnnotationAssertion(rdfs:label obo:MOP_0000696 "random copolymerisation")
-EquivalentClasses(obo:MOP_0000696 ObjectIntersectionOf(obo:MOP_0000631 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53521)))
+EquivalentClasses(obo:MOP_0000696 ObjectIntersectionOf(obo:MOP_0000631 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53521)))
 SubClassOf(obo:MOP_0000696 obo:MOP_0000631)
-SubClassOf(obo:MOP_0000696 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53521))
+SubClassOf(obo:MOP_0000696 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53521))
 
 # Class: obo:MOP_0000697 (statistical copolymerisation)
 
@@ -10109,9 +10115,9 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldb
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000697 "statistical copolymerization")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000697 "MOP:0000697")
 AnnotationAssertion(rdfs:label obo:MOP_0000697 "statistical copolymerisation")
-EquivalentClasses(obo:MOP_0000697 ObjectIntersectionOf(obo:MOP_0000631 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53516)))
+EquivalentClasses(obo:MOP_0000697 ObjectIntersectionOf(obo:MOP_0000631 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53516)))
 SubClassOf(obo:MOP_0000697 obo:MOP_0000631)
-SubClassOf(obo:MOP_0000697 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53516))
+SubClassOf(obo:MOP_0000697 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53516))
 
 # Class: obo:MOP_0000698 (stereospecific copolymerisation)
 
@@ -10119,9 +10125,9 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldb
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000698 "stereospecific copolymerization")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000698 "MOP:0000698")
 AnnotationAssertion(rdfs:label obo:MOP_0000698 "stereospecific copolymerisation")
-EquivalentClasses(obo:MOP_0000698 ObjectIntersectionOf(obo:MOP_0000631 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53522)))
+EquivalentClasses(obo:MOP_0000698 ObjectIntersectionOf(obo:MOP_0000631 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53522)))
 SubClassOf(obo:MOP_0000698 obo:MOP_0000631)
-SubClassOf(obo:MOP_0000698 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53522))
+SubClassOf(obo:MOP_0000698 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53522))
 
 # Class: obo:MOP_0000699 (block copolymerisation)
 
@@ -10129,9 +10135,9 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000699 "block copolymerization")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000699 "MOP:0000699")
 AnnotationAssertion(rdfs:label obo:MOP_0000699 "block copolymerisation")
-EquivalentClasses(obo:MOP_0000699 ObjectIntersectionOf(obo:MOP_0000631 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53511)))
+EquivalentClasses(obo:MOP_0000699 ObjectIntersectionOf(obo:MOP_0000631 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53511)))
 SubClassOf(obo:MOP_0000699 obo:MOP_0000631)
-SubClassOf(obo:MOP_0000699 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53511))
+SubClassOf(obo:MOP_0000699 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53511))
 
 # Class: obo:MOP_0000700 (diblock copolymerisation)
 
@@ -10139,9 +10145,9 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000700 "diblock copolymerization")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000700 "MOP:0000700")
 AnnotationAssertion(rdfs:label obo:MOP_0000700 "diblock copolymerisation")
-EquivalentClasses(obo:MOP_0000700 ObjectIntersectionOf(obo:MOP_0000631 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53512)))
+EquivalentClasses(obo:MOP_0000700 ObjectIntersectionOf(obo:MOP_0000631 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53512)))
 SubClassOf(obo:MOP_0000700 obo:MOP_0000699)
-SubClassOf(obo:MOP_0000700 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53512))
+SubClassOf(obo:MOP_0000700 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53512))
 
 # Class: obo:MOP_0000701 (triblock copolymerisation)
 
@@ -10149,9 +10155,9 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000701 "triblock copolymerization")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000701 "MOP:0000701")
 AnnotationAssertion(rdfs:label obo:MOP_0000701 "triblock copolymerisation")
-EquivalentClasses(obo:MOP_0000701 ObjectIntersectionOf(obo:MOP_0000631 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53513)))
+EquivalentClasses(obo:MOP_0000701 ObjectIntersectionOf(obo:MOP_0000631 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53513)))
 SubClassOf(obo:MOP_0000701 obo:MOP_0000699)
-SubClassOf(obo:MOP_0000701 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53513))
+SubClassOf(obo:MOP_0000701 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53513))
 
 # Class: obo:MOP_0000702 (graft polymerisation)
 
@@ -10159,9 +10165,9 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000702 "graft polymerization")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000702 "MOP:0000702")
 AnnotationAssertion(rdfs:label obo:MOP_0000702 "graft polymerisation")
-EquivalentClasses(obo:MOP_0000702 ObjectIntersectionOf(obo:MOP_0000629 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53518)))
+EquivalentClasses(obo:MOP_0000702 ObjectIntersectionOf(obo:MOP_0000629 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53518)))
 SubClassOf(obo:MOP_0000702 obo:MOP_0000629)
-SubClassOf(obo:MOP_0000702 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_53518))
+SubClassOf(obo:MOP_0000702 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_53518))
 
 # Class: obo:MOP_0000703 (N-deacetylation)
 
@@ -10230,8 +10236,8 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:MOP_0000711 "MOP:0000711")
 AnnotationAssertion(rdfs:label obo:MOP_0000711 "nitrile reduction")
 SubClassOf(obo:MOP_0000711 obo:MOP_0000569)
-SubClassOf(obo:MOP_0000711 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_32877))
-SubClassOf(obo:MOP_0000711 ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_18379))
+SubClassOf(obo:MOP_0000711 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_32877))
+SubClassOf(obo:MOP_0000711 ObjectSomeValuesFrom(obo:RO_0004009 obo:CHEBI_18379))
 
 # Class: obo:MOP_0000712 (olefin reduction)
 
@@ -10239,7 +10245,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:MOP_0000712 "MOP:0000712")
 AnnotationAssertion(rdfs:label obo:MOP_0000712 "olefin reduction")
 SubClassOf(obo:MOP_0000712 obo:MOP_0000589)
-SubClassOf(obo:MOP_0000712 ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_33641))
+SubClassOf(obo:MOP_0000712 ObjectSomeValuesFrom(obo:RO_0004009 obo:CHEBI_33641))
 
 # Class: obo:MOP_0000713 (acetylene reduction)
 
@@ -10903,9 +10909,9 @@ SubClassOf(obo:MOP_0000785 obo:MOP_0000784)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:xp") obo:IAO_0000115 obo:MOP_0000786 "A molecular process in which a molecular entity possessing an unpaired electron is formed.")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000786 "MOP:0000786")
 AnnotationAssertion(rdfs:label obo:MOP_0000786 "radical formation")
-EquivalentClasses(obo:MOP_0000786 ObjectIntersectionOf(obo:MOP_0000543 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_26519)))
+EquivalentClasses(obo:MOP_0000786 ObjectIntersectionOf(obo:MOP_0000543 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_26519)))
 SubClassOf(obo:MOP_0000786 obo:MOP_0000543)
-SubClassOf(obo:MOP_0000786 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_26519))
+SubClassOf(obo:MOP_0000786 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_26519))
 
 # Class: obo:MOP_0000787 (transesterification)
 
@@ -15685,8 +15691,8 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:MOP_0001713 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:MOP_0001713 "MOP:0001713")
 AnnotationAssertion(rdfs:label obo:MOP_0001713 "decarboxylation")
 SubClassOf(obo:MOP_0001713 obo:MOP_0001458)
-SubClassOf(obo:MOP_0001713 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_16526))
 SubClassOf(obo:MOP_0001713 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_46883))
+SubClassOf(obo:MOP_0001713 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_16526))
 
 # Class: obo:MOP_0002000 (N-borylation)
 
