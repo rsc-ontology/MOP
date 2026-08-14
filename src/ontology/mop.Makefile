@@ -5,8 +5,8 @@
 
 ## Module for ontology: chebi
 
-$(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl $(IMPORTDIR)/chebi_terms.txt $(IMPORTSEED) | all_robot_plugins
-	$(ROBOT) annotate --input $< --remove-annotations \
+$(IMPORTDIR)/chebi_import.owl: $(IMPORTDIR)/chebi_terms.txt $(IMPORTSEED) | all_robot_plugins
+	$(ROBOT) annotate --input $(MIRRORDIR)/chebi.owl --remove-annotations \
 		 odk:normalize --add-source true \
 		 extract --term-file $(IMPORTDIR)/chebi_terms.txt $(T_IMPORTSEED) \
 		         --force true --copy-ontology-annotations true \
