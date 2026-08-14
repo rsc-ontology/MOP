@@ -3811,6 +3811,18 @@ AnnotationAssertion(oboInOwl:id obo:BFO_0000144 "BFO:0000144")
 AnnotationAssertion(rdfs:label obo:BFO_0000144 "process profile")
 SubClassOf(obo:BFO_0000144 obo:BFO_0000015)
 
+# Class: obo:CHEBI_24431 (chemical entity)
+
+SubClassOf(obo:CHEBI_24431 obo:BFO_0000040)
+
+# Class: obo:CHEBI_36342 (subatomic particle)
+
+SubClassOf(obo:CHEBI_36342 obo:BFO_0000040)
+
+# Class: obo:CHEBI_50906 (role)
+
+SubClassOf(obo:CHEBI_50906 obo:BFO_0000017)
+
 # Class: obo:MOP_0000000 (borylation)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0000000 "Formation of a covalent bond between a substrate and a boryl group (-BR'R').")
