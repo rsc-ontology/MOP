@@ -3654,13 +3654,8 @@ Declaration(Class(obo:MOP_0005561))
 Declaration(Class(obo:MOP_0006369))
 Declaration(Class(obo:MOP_0006370))
 Declaration(Class(obo:MOP_0006371))
-Declaration(ObjectProperty(obo:BFO_0000077))
-Declaration(ObjectProperty(obo:BFO_0000078))
-Declaration(ObjectProperty(obo:BFO_0000117))
 Declaration(ObjectProperty(obo:BFO_0000119))
-Declaration(ObjectProperty(obo:BFO_0000132))
 Declaration(ObjectProperty(obo:BFO_0000133))
-Declaration(ObjectProperty(obo:BFO_0000162))
 Declaration(ObjectProperty(obo:MOP_0000769))
 Declaration(AnnotationProperty(mop:FORMULA))
 Declaration(AnnotationProperty(mop:IUPAC_NAME))
@@ -3739,48 +3734,15 @@ AnnotationAssertion(rdfs:label oboInOwl:hasSynonymType "has_synonym_type")
 #   Object Properties
 ############################
 
-# Object Property: obo:BFO_0000077 (obsolete_has participant beginning to exist)
-
-AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000077 "deprecated in favor of RO:has primary output")
-AnnotationAssertion(obo:IAO_0000231 obo:BFO_0000077 obo:IAO_0000228)
-AnnotationAssertion(obo:IAO_0100001 obo:BFO_0000077 obo:RO_0004008)
-AnnotationAssertion(oboInOwl:id obo:BFO_0000077 "BFO:0000077")
-AnnotationAssertion(rdfs:label obo:BFO_0000077 "obsolete_has participant beginning to exist")
-AnnotationAssertion(owl:deprecated obo:BFO_0000077 "true"^^xsd:boolean)
-
-# Object Property: obo:BFO_0000078 (obsolete_has participant ceasing to exist)
-
-AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000078 "deprecated in favor of RO:has primary input")
-AnnotationAssertion(obo:IAO_0000231 obo:BFO_0000078 obo:IAO_0000228)
-AnnotationAssertion(obo:IAO_0100001 obo:BFO_0000078 obo:RO_0004009)
-AnnotationAssertion(oboInOwl:id obo:BFO_0000078 "BFO:0000078")
-AnnotationAssertion(rdfs:label obo:BFO_0000078 "obsolete_has participant ceasing to exist")
-AnnotationAssertion(owl:deprecated obo:BFO_0000078 "true"^^xsd:boolean)
-
-# Object Property: obo:BFO_0000117 (has occurrent part)
-
-AnnotationAssertion(oboInOwl:id obo:BFO_0000117 "BFO:0000117")
-AnnotationAssertion(rdfs:label obo:BFO_0000117 "has occurrent part")
-
 # Object Property: obo:BFO_0000119 (has profile)
 
 AnnotationAssertion(oboInOwl:id obo:BFO_0000119 "BFO:0000119")
 AnnotationAssertion(rdfs:label obo:BFO_0000119 "has profile")
 
-# Object Property: obo:BFO_0000132 (part of occurrent)
-
-AnnotationAssertion(oboInOwl:id obo:BFO_0000132 "BFO:0000132")
-AnnotationAssertion(rdfs:label obo:BFO_0000132 "part of occurrent")
-
 # Object Property: obo:BFO_0000133 (process profile of)
 
 AnnotationAssertion(oboInOwl:id obo:BFO_0000133 "BFO:0000133")
 AnnotationAssertion(rdfs:label obo:BFO_0000133 "process profile of")
-
-# Object Property: obo:BFO_0000162 (has disposition at all times)
-
-AnnotationAssertion(oboInOwl:id obo:BFO_0000162 "BFO:0000162")
-AnnotationAssertion(rdfs:label obo:BFO_0000162 "has disposition at all times")
 
 # Object Property: obo:MOP_0000769 (is_catalysis_of)
 
@@ -3794,16 +3756,6 @@ SubObjectPropertyOf(obo:MOP_0000769 obo:RO_0002213)
 ############################
 #   Classes
 ############################
-
-# Class: obo:BFO_0000015 (process)
-
-AnnotationAssertion(oboInOwl:id obo:BFO_0000015 "BFO:0000015")
-AnnotationAssertion(rdfs:label obo:BFO_0000015 "process")
-
-# Class: obo:BFO_0000016 (disposition)
-
-AnnotationAssertion(oboInOwl:id obo:BFO_0000016 "BFO:0000016")
-AnnotationAssertion(rdfs:label obo:BFO_0000016 "disposition")
 
 # Class: obo:BFO_0000144 (process profile)
 
@@ -9533,9 +9485,9 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldb
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000632 "condensation polymerization")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000632 "MOP:0000632")
 AnnotationAssertion(rdfs:label obo:MOP_0000632 "condensation polymerisation")
-EquivalentClasses(obo:MOP_0000632 ObjectIntersectionOf(obo:MOP_0000629 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000627) ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_33839)))
+EquivalentClasses(obo:MOP_0000632 ObjectIntersectionOf(obo:MOP_0000629 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000627) ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_33839)))
 SubClassOf(obo:MOP_0000632 obo:MOP_0000629)
-SubClassOf(obo:MOP_0000632 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000627))
+SubClassOf(obo:MOP_0000632 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000627))
 SubClassOf(obo:MOP_0000632 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_33839))
 
 # Class: obo:MOP_0000633 (homopolymerisation)
@@ -9557,7 +9509,7 @@ AnnotationAssertion(rdfs:label obo:MOP_0000634 "chain polymerisation")
 EquivalentClasses(obo:MOP_0000634 ObjectIntersectionOf(obo:MOP_0000635 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_33839)))
 SubClassOf(obo:MOP_0000634 obo:MOP_0000629)
 SubClassOf(obo:MOP_0000634 obo:MOP_0000635)
-SubClassOf(obo:MOP_0000634 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000640))
+SubClassOf(obo:MOP_0000634 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000640))
 SubClassOf(obo:MOP_0000634 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_33839))
 
 # Class: obo:MOP_0000635 (chain reaction)
@@ -9607,7 +9559,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldb
 AnnotationAssertion(oboInOwl:id obo:MOP_0000640 "MOP:0000640")
 AnnotationAssertion(rdfs:label obo:MOP_0000640 "chain initiation")
 SubClassOf(obo:MOP_0000640 obo:MOP_0000543)
-SubClassOf(obo:MOP_0000640 ObjectSomeValuesFrom(obo:BFO_0000132 obo:MOP_0000634))
+SubClassOf(obo:MOP_0000640 ObjectSomeValuesFrom(obo:BFO_0000050 obo:MOP_0000634))
 
 # Class: obo:MOP_0000641 (all-degree polymerisation)
 
@@ -9629,29 +9581,29 @@ SubClassOf(obo:MOP_0000642 obo:MOP_0000543)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.P04720") obo:IAO_0000115 obo:MOP_0000643 "An all-degree polymerisation that proceeds by addition reactions.")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000643 "MOP:0000643")
 AnnotationAssertion(rdfs:label obo:MOP_0000643 "polyaddition")
-EquivalentClasses(obo:MOP_0000643 ObjectIntersectionOf(obo:MOP_0000641 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000642)))
+EquivalentClasses(obo:MOP_0000643 ObjectIntersectionOf(obo:MOP_0000641 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000642)))
 SubClassOf(obo:MOP_0000643 obo:MOP_0000641)
-SubClassOf(obo:MOP_0000643 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000642))
+SubClassOf(obo:MOP_0000643 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000642))
 
 # Class: obo:MOP_0000644 (polycondensation)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.P04722") obo:IAO_0000115 obo:MOP_0000644 "An all-degree polymerisation that proceeds by condensation reactions.")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000644 "MOP:0000644")
 AnnotationAssertion(rdfs:label obo:MOP_0000644 "polycondensation")
-EquivalentClasses(obo:MOP_0000644 ObjectIntersectionOf(obo:MOP_0000641 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000627)))
+EquivalentClasses(obo:MOP_0000644 ObjectIntersectionOf(obo:MOP_0000641 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000627)))
 SubClassOf(obo:MOP_0000644 obo:MOP_0000632)
 SubClassOf(obo:MOP_0000644 obo:MOP_0000641)
-SubClassOf(obo:MOP_0000644 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000627))
+SubClassOf(obo:MOP_0000644 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000627))
 
 # Class: obo:MOP_0000645 (condensative chain polymerisation)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.C01239") obo:IAO_0000115 obo:MOP_0000645 "A chain polymerisation that proceeds by condensation steps.")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000645 "MOP:0000645")
 AnnotationAssertion(rdfs:label obo:MOP_0000645 "condensative chain polymerisation")
-EquivalentClasses(obo:MOP_0000645 ObjectIntersectionOf(obo:MOP_0000634 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000627)))
+EquivalentClasses(obo:MOP_0000645 ObjectIntersectionOf(obo:MOP_0000634 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000627)))
 SubClassOf(obo:MOP_0000645 obo:MOP_0000632)
 SubClassOf(obo:MOP_0000645 obo:MOP_0000634)
-SubClassOf(obo:MOP_0000645 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000627))
+SubClassOf(obo:MOP_0000645 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000627))
 
 # Class: obo:MOP_0000646 (living polymerisation)
 
@@ -9944,18 +9896,18 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:MOP_0000677 "MOP:0000677")
 AnnotationAssertion(rdfs:label obo:MOP_0000677 "transmetallation")
 SubClassOf(obo:MOP_0000677 obo:MOP_0000543)
-SubClassOf(obo:MOP_0000677 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000674))
-SubClassOf(obo:MOP_0000677 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000676))
+SubClassOf(obo:MOP_0000677 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000674))
+SubClassOf(obo:MOP_0000677 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000676))
 
 # Class: obo:MOP_0000678 (cyanosilylation)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0000678 "1/2/addition across a double bond of a cyano group and a silyl group.")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000678 "MOP:0000678")
 AnnotationAssertion(rdfs:label obo:MOP_0000678 "cyanosilylation")
-EquivalentClasses(obo:MOP_0000678 ObjectIntersectionOf(obo:MOP_0000665 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000482) ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000597)))
+EquivalentClasses(obo:MOP_0000678 ObjectIntersectionOf(obo:MOP_0000665 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000482) ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000597)))
 SubClassOf(obo:MOP_0000678 obo:MOP_0000665)
-SubClassOf(obo:MOP_0000678 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000482))
-SubClassOf(obo:MOP_0000678 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000597))
+SubClassOf(obo:MOP_0000678 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000482))
+SubClassOf(obo:MOP_0000678 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000597))
 
 # Class: obo:MOP_0000679 (electron pair transfer)
 
@@ -9963,7 +9915,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:MOP_0000679 "MOP:0000679")
 AnnotationAssertion(rdfs:label obo:MOP_0000679 "electron pair transfer")
 SubClassOf(obo:MOP_0000679 obo:MOP_0000543)
-SubClassOf(obo:MOP_0000679 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000615))
+SubClassOf(obo:MOP_0000679 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000615))
 
 # Class: obo:MOP_0000680 (proton transfer)
 
@@ -10012,9 +9964,9 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000685 "ROMP")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000685 "ring-opening metathesis polymerisation")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000685 "MOP:0000685")
 AnnotationAssertion(rdfs:label obo:MOP_0000685 "ring-opening metathesis polymerisation")
-EquivalentClasses(obo:MOP_0000685 ObjectIntersectionOf(obo:MOP_0000686 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000687)))
+EquivalentClasses(obo:MOP_0000685 ObjectIntersectionOf(obo:MOP_0000686 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000687)))
 SubClassOf(obo:MOP_0000685 obo:MOP_0000686)
-SubClassOf(obo:MOP_0000685 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000687))
+SubClassOf(obo:MOP_0000685 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000687))
 
 # Class: obo:MOP_0000686 (ring-opening polymerisation)
 
@@ -10312,9 +10264,9 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:MOP_0000718 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000718 "MOP:0000718")
 AnnotationAssertion(rdfs:comment obo:MOP_0000718 "this surely belongs in ChEBI but put it here pro tem")
 AnnotationAssertion(rdfs:label obo:MOP_0000718 "enolisable carbonyl compound")
-EquivalentClasses(obo:MOP_0000718 ObjectIntersectionOf(obo:CHEBI_36587 ObjectSomeValuesFrom(obo:BFO_0000162 obo:MOP_0000717)))
+EquivalentClasses(obo:MOP_0000718 ObjectIntersectionOf(obo:CHEBI_36587 ObjectSomeValuesFrom(obo:RO_0000091 obo:MOP_0000717)))
 SubClassOf(obo:MOP_0000718 obo:CHEBI_36587)
-SubClassOf(obo:MOP_0000718 ObjectSomeValuesFrom(obo:BFO_0000162 obo:MOP_0000717))
+SubClassOf(obo:MOP_0000718 ObjectSomeValuesFrom(obo:RO_0000091 obo:MOP_0000717))
 
 # Class: obo:MOP_0000719 (O-dealkylation)
 
@@ -10350,7 +10302,7 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:MOP_0000722 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000722 "MOP:0000722")
 AnnotationAssertion(rdfs:label obo:MOP_0000722 "decarboxylative condensation")
 SubClassOf(obo:MOP_0000722 obo:MOP_0000627)
-SubClassOf(obo:MOP_0000722 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0001713))
+SubClassOf(obo:MOP_0000722 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0001713))
 
 # Class: obo:MOP_0000723 (deethanolative condensation)
 
@@ -10469,7 +10421,7 @@ AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000736 "2014-04-09T10:00:00Z
 AnnotationAssertion(oboInOwl:id obo:MOP_0000736 "MOP:0000736")
 AnnotationAssertion(rdfs:label obo:MOP_0000736 "Brønsted base catalysis")
 SubClassOf(obo:MOP_0000736 obo:MOP_0000731)
-SubClassOf(obo:MOP_0000736 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000737))
+SubClassOf(obo:MOP_0000736 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000737))
 
 # Class: obo:MOP_0000737 (accepting a hydron)
 
@@ -10497,8 +10449,8 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:MOP_0000739 "MOP:0000739")
 AnnotationAssertion(rdfs:label obo:MOP_0000739 "Lewis adduct formation")
 SubClassOf(obo:MOP_0000739 obo:MOP_0000543)
-SubClassOf(obo:MOP_0000739 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000733))
-SubClassOf(obo:MOP_0000739 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000738))
+SubClassOf(obo:MOP_0000739 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000733))
+SubClassOf(obo:MOP_0000739 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000738))
 
 # Class: obo:MOP_0000740 (acid catalysis)
 
@@ -10515,7 +10467,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000741 "4-exo-tet cyclisat
 AnnotationAssertion(oboInOwl:id obo:MOP_0000741 "MOP:0000741")
 AnnotationAssertion(rdfs:label obo:MOP_0000741 "4-exo-tet cyclization")
 SubClassOf(obo:MOP_0000741 obo:MOP_0000772)
-SubClassOf(obo:MOP_0000741 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000777))
+SubClassOf(obo:MOP_0000741 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000777))
 SubClassOf(obo:MOP_0000741 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000773))
 
 # Class: obo:MOP_0000742 (5-exo-tet cyclization)
@@ -10525,7 +10477,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000742 "5-exo-tet cyclisat
 AnnotationAssertion(oboInOwl:id obo:MOP_0000742 "MOP:0000742")
 AnnotationAssertion(rdfs:label obo:MOP_0000742 "5-exo-tet cyclization")
 SubClassOf(obo:MOP_0000742 obo:MOP_0000772)
-SubClassOf(obo:MOP_0000742 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000777))
+SubClassOf(obo:MOP_0000742 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000777))
 SubClassOf(obo:MOP_0000742 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000773))
 
 # Class: obo:MOP_0000743 (6-exo-tet cyclization)
@@ -10535,7 +10487,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000743 "6-exo-tet cyclisat
 AnnotationAssertion(oboInOwl:id obo:MOP_0000743 "MOP:0000743")
 AnnotationAssertion(rdfs:label obo:MOP_0000743 "6-exo-tet cyclization")
 SubClassOf(obo:MOP_0000743 obo:MOP_0000772)
-SubClassOf(obo:MOP_0000743 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000777))
+SubClassOf(obo:MOP_0000743 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000777))
 SubClassOf(obo:MOP_0000743 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000773))
 
 # Class: obo:MOP_0000744 (7-exo-tet cyclization)
@@ -10545,7 +10497,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000744 "7-exo-tet cyclisat
 AnnotationAssertion(oboInOwl:id obo:MOP_0000744 "MOP:0000744")
 AnnotationAssertion(rdfs:label obo:MOP_0000744 "7-exo-tet cyclization")
 SubClassOf(obo:MOP_0000744 obo:MOP_0000772)
-SubClassOf(obo:MOP_0000744 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000777))
+SubClassOf(obo:MOP_0000744 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000777))
 SubClassOf(obo:MOP_0000744 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000773))
 
 # Class: obo:MOP_0000745 (5-endo-tet cyclization)
@@ -10555,7 +10507,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000745 "5-endo-tet cyclisa
 AnnotationAssertion(oboInOwl:id obo:MOP_0000745 "MOP:0000745")
 AnnotationAssertion(rdfs:label obo:MOP_0000745 "5-endo-tet cyclization")
 SubClassOf(obo:MOP_0000745 obo:MOP_0000771)
-SubClassOf(obo:MOP_0000745 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000777))
+SubClassOf(obo:MOP_0000745 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000777))
 SubClassOf(obo:MOP_0000745 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000774))
 
 # Class: obo:MOP_0000746 (6-endo-tet cyclization)
@@ -10565,7 +10517,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000746 "6-endo-tet cyclisa
 AnnotationAssertion(oboInOwl:id obo:MOP_0000746 "MOP:0000746")
 AnnotationAssertion(rdfs:label obo:MOP_0000746 "6-endo-tet cyclization")
 SubClassOf(obo:MOP_0000746 obo:MOP_0000771)
-SubClassOf(obo:MOP_0000746 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000777))
+SubClassOf(obo:MOP_0000746 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000777))
 SubClassOf(obo:MOP_0000746 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000774))
 
 # Class: obo:MOP_0000747 (7-endo-tet cyclization)
@@ -10575,7 +10527,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000747 "7-endo-tet cyclisa
 AnnotationAssertion(oboInOwl:id obo:MOP_0000747 "MOP:0000747")
 AnnotationAssertion(rdfs:label obo:MOP_0000747 "7-endo-tet cyclization")
 SubClassOf(obo:MOP_0000747 obo:MOP_0000771)
-SubClassOf(obo:MOP_0000747 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000777))
+SubClassOf(obo:MOP_0000747 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000777))
 SubClassOf(obo:MOP_0000747 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000774))
 
 # Class: obo:MOP_0000748 (3-exo-trig cyclization)
@@ -10585,7 +10537,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000748 "3-exo-trig cyclisa
 AnnotationAssertion(oboInOwl:id obo:MOP_0000748 "MOP:0000748")
 AnnotationAssertion(rdfs:label obo:MOP_0000748 "3-exo-trig cyclization")
 SubClassOf(obo:MOP_0000748 obo:MOP_0000772)
-SubClassOf(obo:MOP_0000748 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000776))
+SubClassOf(obo:MOP_0000748 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000776))
 SubClassOf(obo:MOP_0000748 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000773))
 
 # Class: obo:MOP_0000749 (3-exo-dig cyclization)
@@ -10595,7 +10547,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000749 "3-exo-dig cyclisat
 AnnotationAssertion(oboInOwl:id obo:MOP_0000749 "MOP:0000749")
 AnnotationAssertion(rdfs:label obo:MOP_0000749 "3-exo-dig cyclization")
 SubClassOf(obo:MOP_0000749 obo:MOP_0000772)
-SubClassOf(obo:MOP_0000749 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000775))
+SubClassOf(obo:MOP_0000749 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000775))
 SubClassOf(obo:MOP_0000749 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000774))
 
 # Class: obo:MOP_0000750 (3-endo-dig cyclization)
@@ -10605,7 +10557,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000750 "3-endo-dig cyclisa
 AnnotationAssertion(oboInOwl:id obo:MOP_0000750 "MOP:0000750")
 AnnotationAssertion(rdfs:label obo:MOP_0000750 "3-endo-dig cyclization")
 SubClassOf(obo:MOP_0000750 obo:MOP_0000771)
-SubClassOf(obo:MOP_0000750 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000775))
+SubClassOf(obo:MOP_0000750 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000775))
 SubClassOf(obo:MOP_0000750 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000773))
 
 # Class: obo:MOP_0000751 (3-endo-trig cyclization)
@@ -10615,7 +10567,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000751 "3-endo-trig cyclis
 AnnotationAssertion(oboInOwl:id obo:MOP_0000751 "MOP:0000751")
 AnnotationAssertion(rdfs:label obo:MOP_0000751 "3-endo-trig cyclization")
 SubClassOf(obo:MOP_0000751 obo:MOP_0000771)
-SubClassOf(obo:MOP_0000751 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000776))
+SubClassOf(obo:MOP_0000751 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000776))
 SubClassOf(obo:MOP_0000751 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000774))
 
 # Class: obo:MOP_0000752 (4-exo-trig cyclization)
@@ -10625,7 +10577,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000752 "4-exo-trig cyclisa
 AnnotationAssertion(oboInOwl:id obo:MOP_0000752 "MOP:0000752")
 AnnotationAssertion(rdfs:label obo:MOP_0000752 "4-exo-trig cyclization")
 SubClassOf(obo:MOP_0000752 obo:MOP_0000772)
-SubClassOf(obo:MOP_0000752 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000776))
+SubClassOf(obo:MOP_0000752 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000776))
 SubClassOf(obo:MOP_0000752 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000773))
 
 # Class: obo:MOP_0000753 (4-endo-trig cyclization)
@@ -10635,7 +10587,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000753 "4-endo-trig cyclis
 AnnotationAssertion(oboInOwl:id obo:MOP_0000753 "MOP:0000753")
 AnnotationAssertion(rdfs:label obo:MOP_0000753 "4-endo-trig cyclization")
 SubClassOf(obo:MOP_0000753 obo:MOP_0000771)
-SubClassOf(obo:MOP_0000753 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000776))
+SubClassOf(obo:MOP_0000753 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000776))
 SubClassOf(obo:MOP_0000753 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000774))
 
 # Class: obo:MOP_0000754 (4-endo-dig cyclization)
@@ -10645,7 +10597,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000754 "4-endo-dig cyclisa
 AnnotationAssertion(oboInOwl:id obo:MOP_0000754 "MOP:0000754")
 AnnotationAssertion(rdfs:label obo:MOP_0000754 "4-endo-dig cyclization")
 SubClassOf(obo:MOP_0000754 obo:MOP_0000771)
-SubClassOf(obo:MOP_0000754 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000775))
+SubClassOf(obo:MOP_0000754 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000775))
 SubClassOf(obo:MOP_0000754 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000773))
 
 # Class: obo:MOP_0000755 (5-exo-trig cyclization)
@@ -10655,7 +10607,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000755 "5-exo-trig cyclisa
 AnnotationAssertion(oboInOwl:id obo:MOP_0000755 "MOP:0000755")
 AnnotationAssertion(rdfs:label obo:MOP_0000755 "5-exo-trig cyclization")
 SubClassOf(obo:MOP_0000755 obo:MOP_0000772)
-SubClassOf(obo:MOP_0000755 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000776))
+SubClassOf(obo:MOP_0000755 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000776))
 SubClassOf(obo:MOP_0000755 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000773))
 
 # Class: obo:MOP_0000756 (5-exo-dig cyclization)
@@ -10665,7 +10617,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000756 "5-exo-dig cyclisat
 AnnotationAssertion(oboInOwl:id obo:MOP_0000756 "MOP:0000756")
 AnnotationAssertion(rdfs:label obo:MOP_0000756 "5-exo-dig cyclization")
 SubClassOf(obo:MOP_0000756 obo:MOP_0000772)
-SubClassOf(obo:MOP_0000756 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000775))
+SubClassOf(obo:MOP_0000756 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000775))
 SubClassOf(obo:MOP_0000756 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000773))
 
 # Class: obo:MOP_0000757 (5-endo-trig cyclization)
@@ -10675,7 +10627,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000757 "5-endo-trig cyclis
 AnnotationAssertion(oboInOwl:id obo:MOP_0000757 "MOP:0000757")
 AnnotationAssertion(rdfs:label obo:MOP_0000757 "5-endo-trig cyclization")
 SubClassOf(obo:MOP_0000757 obo:MOP_0000771)
-SubClassOf(obo:MOP_0000757 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000776))
+SubClassOf(obo:MOP_0000757 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000776))
 SubClassOf(obo:MOP_0000757 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000774))
 
 # Class: obo:MOP_0000758 (5-endo-dig cyclization)
@@ -10685,7 +10637,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000758 "5-endo-dig cyclisa
 AnnotationAssertion(oboInOwl:id obo:MOP_0000758 "MOP:0000758")
 AnnotationAssertion(rdfs:label obo:MOP_0000758 "5-endo-dig cyclization")
 SubClassOf(obo:MOP_0000758 obo:MOP_0000771)
-SubClassOf(obo:MOP_0000758 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000775))
+SubClassOf(obo:MOP_0000758 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000775))
 SubClassOf(obo:MOP_0000758 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000773))
 
 # Class: obo:MOP_0000759 (6-endo-trig cyclization)
@@ -10695,7 +10647,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000759 "6-endo-trig cyclis
 AnnotationAssertion(oboInOwl:id obo:MOP_0000759 "MOP:0000759")
 AnnotationAssertion(rdfs:label obo:MOP_0000759 "6-endo-trig cyclization")
 SubClassOf(obo:MOP_0000759 obo:MOP_0000771)
-SubClassOf(obo:MOP_0000759 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000776))
+SubClassOf(obo:MOP_0000759 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000776))
 SubClassOf(obo:MOP_0000759 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000773))
 
 # Class: obo:MOP_0000760 (7-endo-trig cyclization)
@@ -10705,7 +10657,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000760 "7-endo-trig cyclis
 AnnotationAssertion(oboInOwl:id obo:MOP_0000760 "MOP:0000760")
 AnnotationAssertion(rdfs:label obo:MOP_0000760 "7-endo-trig cyclization")
 SubClassOf(obo:MOP_0000760 obo:MOP_0000771)
-SubClassOf(obo:MOP_0000760 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000776))
+SubClassOf(obo:MOP_0000760 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000776))
 SubClassOf(obo:MOP_0000760 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000773))
 
 # Class: obo:MOP_0000761 (7-endo-dig cyclization)
@@ -10715,7 +10667,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000761 "7-endo-dig cyclisa
 AnnotationAssertion(oboInOwl:id obo:MOP_0000761 "MOP:0000761")
 AnnotationAssertion(rdfs:label obo:MOP_0000761 "7-endo-dig cyclization")
 SubClassOf(obo:MOP_0000761 obo:MOP_0000771)
-SubClassOf(obo:MOP_0000761 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000775))
+SubClassOf(obo:MOP_0000761 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000775))
 SubClassOf(obo:MOP_0000761 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000773))
 
 # Class: obo:MOP_0000762 (4-exo-dig cyclization)
@@ -10725,7 +10677,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000762 "4-exo-dig cyclisat
 AnnotationAssertion(oboInOwl:id obo:MOP_0000762 "MOP:0000762")
 AnnotationAssertion(rdfs:label obo:MOP_0000762 "4-exo-dig cyclization")
 SubClassOf(obo:MOP_0000762 obo:MOP_0000772)
-SubClassOf(obo:MOP_0000762 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000775))
+SubClassOf(obo:MOP_0000762 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000775))
 SubClassOf(obo:MOP_0000762 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000774))
 
 # Class: obo:MOP_0000763 (6-exo-dig cyclization)
@@ -10735,7 +10687,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000763 "6-exo-dig cyclisat
 AnnotationAssertion(oboInOwl:id obo:MOP_0000763 "MOP:0000763")
 AnnotationAssertion(rdfs:label obo:MOP_0000763 "6-exo-dig cyclization")
 SubClassOf(obo:MOP_0000763 obo:MOP_0000772)
-SubClassOf(obo:MOP_0000763 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000775))
+SubClassOf(obo:MOP_0000763 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000775))
 SubClassOf(obo:MOP_0000763 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000773))
 
 # Class: obo:MOP_0000764 (7-exo-dig cyclization)
@@ -10745,7 +10697,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000764 "7-exo-dig cyclisat
 AnnotationAssertion(oboInOwl:id obo:MOP_0000764 "MOP:0000764")
 AnnotationAssertion(rdfs:label obo:MOP_0000764 "7-exo-dig cyclization")
 SubClassOf(obo:MOP_0000764 obo:MOP_0000772)
-SubClassOf(obo:MOP_0000764 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000775))
+SubClassOf(obo:MOP_0000764 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000775))
 SubClassOf(obo:MOP_0000764 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000773))
 
 # Class: obo:MOP_0000765 (6-exo-trig cyclization)
@@ -10755,7 +10707,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000765 "6-exo-trig cyclisa
 AnnotationAssertion(oboInOwl:id obo:MOP_0000765 "MOP:0000765")
 AnnotationAssertion(rdfs:label obo:MOP_0000765 "6-exo-trig cyclization")
 SubClassOf(obo:MOP_0000765 obo:MOP_0000772)
-SubClassOf(obo:MOP_0000765 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000776))
+SubClassOf(obo:MOP_0000765 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000776))
 SubClassOf(obo:MOP_0000765 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000773))
 
 # Class: obo:MOP_0000766 (7-exo-trig cyclization)
@@ -10765,7 +10717,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000766 "7-exo-trig cyclisa
 AnnotationAssertion(oboInOwl:id obo:MOP_0000766 "MOP:0000766")
 AnnotationAssertion(rdfs:label obo:MOP_0000766 "7-exo-trig cyclization")
 SubClassOf(obo:MOP_0000766 obo:MOP_0000772)
-SubClassOf(obo:MOP_0000766 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000776))
+SubClassOf(obo:MOP_0000766 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000776))
 SubClassOf(obo:MOP_0000766 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000773))
 
 # Class: obo:MOP_0000767 (endothermic reaction)
@@ -10791,7 +10743,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000770 "6-endo-dig cyclisa
 AnnotationAssertion(oboInOwl:id obo:MOP_0000770 "MOP:0000770")
 AnnotationAssertion(rdfs:label obo:MOP_0000770 "6-endo-dig cyclization")
 SubClassOf(obo:MOP_0000770 obo:MOP_0000771)
-SubClassOf(obo:MOP_0000770 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000775))
+SubClassOf(obo:MOP_0000770 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000775))
 SubClassOf(obo:MOP_0000770 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000773))
 
 # Class: obo:MOP_0000771 (endocyclization)
@@ -10854,7 +10806,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000778 "3-exo-tet cyclisat
 AnnotationAssertion(oboInOwl:id obo:MOP_0000778 "MOP:0000778")
 AnnotationAssertion(rdfs:label obo:MOP_0000778 "3-exo-tet cyclization")
 SubClassOf(obo:MOP_0000778 obo:MOP_0000772)
-SubClassOf(obo:MOP_0000778 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0000777))
+SubClassOf(obo:MOP_0000778 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MOP_0000777))
 SubClassOf(obo:MOP_0000778 ObjectSomeValuesFrom(obo:BFO_0000119 obo:MOP_0000773))
 
 # Class: obo:MOP_0000779 (formation of covalent bond)

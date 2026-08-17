@@ -1,8 +1,11 @@
 http://purl.obolibrary.org/obo/RO_0000057  # has participant 
+http://purl.obolibrary.org/obo/RO_0000091  # has disposition
 http://purl.obolibrary.org/obo/RO_0002213  # positively regulates
 http://purl.obolibrary.org/obo/RO_0004008  # has primary output
 http://purl.obolibrary.org/obo/RO_0004009  # has primary input 
 
 # Import BFO Object Properties not mirrored in bfo_import.owl:
 # For historic reasons, RO has made use of a small number of relations with BFO IDs. These are RO relations, not BFO relations - they are defined in the RO, and will be maintained in the RO. Note that the URIs for these classes resolve to RO, as per agreement with the BFO developers.For more details, see https://oborel.github.io/obo-relations/ro-and-bfo/
+http://purl.obolibrary.org/obo/BFO_0000050 # part of 
+http://purl.obolibrary.org/obo/BFO_0000051 # has part
 http://purl.obolibrary.org/obo/BFO_0000055 # realizes
