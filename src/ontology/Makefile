@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                0ee8e4aa885fe5c618e23c864e79409de17a7a4e900341be455f0cd01ee8c4d5
+CONFIG_HASH=                e8b33d39d4e0a1a0855a51a160956565ac5eaafff771436358e028aa5fcd51a8
 
 
 # ----------------------------------------
@@ -418,15 +418,6 @@ $(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl | all_robot_plugins
 		 repair --merge-axiom-annotations true \
 		 $(ANNOTATE_CONVERT_FILE)
 
-## Module for ontology: omo (mirror)
-$(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl | all_robot_plugins
-	$(ROBOT) annotate --input $< --remove-annotations \
-		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
-		               --subset-decls true --synonym-decls true \
-		               --add-source true \
-		 repair --merge-axiom-annotations true \
-		 $(ANNOTATE_CONVERT_FILE)
-
 ## Module for ontology: chebi (custom)
 ifeq ($(IMP_LARGE),true)
 $(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl
@@ -472,7 +463,7 @@ ifeq ($(MIR),true)
 .PHONY: mirror-ro
 .PRECIOUS: $(MIRRORDIR)/ro.owl
 mirror-ro: | $(TMPDIR)
-	curl -L $(OBOBASE)/ro.owl --create-dirs -o $(TMPDIR)/ro-download.owl --retry 4 --max-time 200 && \
+	curl -L $(OBOBASE)/ro/ro-base.owl --create-dirs -o $(TMPDIR)/ro-download.owl --retry 4 --max-time 200 && \
 	$(ROBOT) convert -i $(TMPDIR)/ro-download.owl -o $(TMPDIR)/$@.owl
 
 
@@ -489,7 +480,7 @@ mirror-bfo: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/iao.owl
 mirror-iao: | $(TMPDIR)
 	curl -L $(OBOBASE)/iao.owl --create-dirs -o $(TMPDIR)/iao-download.owl --retry 4 --max-time 200 && \
-	$(ROBOT) convert -i $(TMPDIR)/iao-download.owl -o $(TMPDIR)/$@.owl
+	$(ROBOT) remove -i $(TMPDIR)/iao-download.owl --base-iri http://purl.obolibrary.org/obo/IAO --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: omo
@@ -497,7 +488,7 @@ mirror-iao: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/omo.owl
 mirror-omo: | $(TMPDIR)
 	curl -L $(OBOBASE)/omo.owl --create-dirs -o $(TMPDIR)/omo-download.owl --retry 4 --max-time 200 && \
-	$(ROBOT) convert -i $(TMPDIR)/omo-download.owl -o $(TMPDIR)/$@.owl
+	$(ROBOT) remove -i $(TMPDIR)/omo-download.owl --base-iri http://purl.obolibrary.org/obo/OMO --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: chebi

@@ -1,0 +1,48 @@
+http://purl.obolibrary.org/obo/CHEBI_16134 # ammonia
+http://purl.obolibrary.org/obo/CHEBI_18407 # hydrogen cyanide
+http://purl.obolibrary.org/obo/CHEBI_22563 # anion
+http://purl.obolibrary.org/obo/CHEBI_23423 # pseudohalogen oxoacid
+http://purl.obolibrary.org/obo/CHEBI_24432 # biological role
+http://purl.obolibrary.org/obo/CHEBI_24834 # inorganic anion
+http://purl.obolibrary.org/obo/CHEBI_24928 # isothiocyanic acid
+http://purl.obolibrary.org/obo/CHEBI_25384 # monocarboxylic acid
+http://purl.obolibrary.org/obo/CHEBI_25693 # organic heteromonocyclic compound
+http://purl.obolibrary.org/obo/CHEBI_25697 # organic cation
+http://purl.obolibrary.org/obo/CHEBI_25699 # organic ion
+http://purl.obolibrary.org/obo/CHEBI_26835 # sulfur molecular entity
+http://purl.obolibrary.org/obo/CHEBI_27561 # oxirane
+http://purl.obolibrary.org/obo/CHEBI_28024 # cyanic acid
+http://purl.obolibrary.org/obo/CHEBI_28938 # ammonium
+http://purl.obolibrary.org/obo/CHEBI_29200 # thiocyanic acid
+http://purl.obolibrary.org/obo/CHEBI_29202 # isocyanic acid
+http://purl.obolibrary.org/obo/CHEBI_29778 # selenocyanic acid
+http://purl.obolibrary.org/obo/CHEBI_29779 # isoselenocyanic acid
+http://purl.obolibrary.org/obo/CHEBI_33232 # application
+http://purl.obolibrary.org/obo/CHEBI_33233 # fundamental particle
+http://purl.obolibrary.org/obo/CHEBI_33250 # atom
+http://purl.obolibrary.org/obo/CHEBI_33261 # organosulfur compound
+http://purl.obolibrary.org/obo/CHEBI_33405 # hydracid
+http://purl.obolibrary.org/obo/CHEBI_33597 # homocyclic compound
+http://purl.obolibrary.org/obo/CHEBI_33598 # carbocyclic compound
+http://purl.obolibrary.org/obo/CHEBI_33655 # aromatic compound
+http://purl.obolibrary.org/obo/CHEBI_33659 # organic aromatic compound
+http://purl.obolibrary.org/obo/CHEBI_33661 # monocyclic compound
+http://purl.obolibrary.org/obo/CHEBI_33663 # cyclic hydrocarbon
+http://purl.obolibrary.org/obo/CHEBI_33670 # heteromonocyclic compound
+http://purl.obolibrary.org/obo/CHEBI_33702 # polyatomic cation
+http://purl.obolibrary.org/obo/CHEBI_35106 # nitrogen hydride
+http://purl.obolibrary.org/obo/CHEBI_35552 # heterocyclic organic fundamental parent
+http://purl.obolibrary.org/obo/CHEBI_35881 # pnictogen hydride
+http://purl.obolibrary.org/obo/CHEBI_36338 # lepton
+http://purl.obolibrary.org/obo/CHEBI_36358 # polyatomic ion
+http://purl.obolibrary.org/obo/CHEBI_36824 # cyano group
+http://purl.obolibrary.org/obo/CHEBI_36833 # tellurocyanic acid
+http://purl.obolibrary.org/obo/CHEBI_46629 # oxo group
+http://purl.obolibrary.org/obo/CHEBI_48818 # cyano group
+http://purl.obolibrary.org/obo/CHEBI_50312 # onium compound
+http://purl.obolibrary.org/obo/CHEBI_51446 # organic divalent group
+http://purl.obolibrary.org/obo/CHEBI_52845 # cyclic organic group
+http://purl.obolibrary.org/obo/CHEBI_64766 # cationic group
+http://purl.obolibrary.org/obo/CHEBI_64767 # anionic group
+http://purl.obolibrary.org/obo/CHEBI_73474 # acetylenic compound
+http://purl.obolibrary.org/obo/CHEBI_76413 # greenhouse gas

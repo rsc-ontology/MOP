@@ -1,0 +1,47 @@
+http://purl.obolibrary.org/obo/CHEBI_15734  # primary alcohol
+http://purl.obolibrary.org/obo/CHEBI_16526  # carbon dioxide
+http://purl.obolibrary.org/obo/CHEBI_17087  # ketone
+http://purl.obolibrary.org/obo/CHEBI_17478  # aldehyde
+http://purl.obolibrary.org/obo/CHEBI_18379  # nitrile
+http://purl.obolibrary.org/obo/CHEBI_24636  # proton
+http://purl.obolibrary.org/obo/CHEBI_26519  # radical
+http://purl.obolibrary.org/obo/CHEBI_29233  # deuteron
+http://purl.obolibrary.org/obo/CHEBI_29441  # isothiocyanato group
+http://purl.obolibrary.org/obo/CHEBI_29444  # isoselenocyanato group
+http://purl.obolibrary.org/obo/CHEBI_29785  # nitro group
+http://purl.obolibrary.org/obo/CHEBI_29810  # isocyanato group
+http://purl.obolibrary.org/obo/CHEBI_32877  # primary amine
+http://purl.obolibrary.org/obo/CHEBI_32955  # epoxide
+http://purl.obolibrary.org/obo/CHEBI_33308  # carboxylic ester
+http://purl.obolibrary.org/obo/CHEBI_33338  # aryl group
+http://purl.obolibrary.org/obo/CHEBI_33575  # carboxylic acid
+http://purl.obolibrary.org/obo/CHEBI_33641  # olefin
+http://purl.obolibrary.org/obo/CHEBI_33823  # enol
+http://purl.obolibrary.org/obo/CHEBI_35681  # secondary alcohol
+http://purl.obolibrary.org/obo/CHEBI_36825  # azido group
+http://purl.obolibrary.org/obo/CHEBI_36826  # isocyano group
+http://purl.obolibrary.org/obo/CHEBI_36827  # isotellurocyanato group
+http://purl.obolibrary.org/obo/CHEBI_37838  # carboacyl group 
+http://purl.obolibrary.org/obo/CHEBI_37997  # homopolymer macromolecule
+http://purl.obolibrary.org/obo/CHEBI_39141  # Brønsted acid
+http://purl.obolibrary.org/obo/CHEBI_39142  # Brønsted base
+http://purl.obolibrary.org/obo/CHEBI_39143  # Lewis acid
+http://purl.obolibrary.org/obo/CHEBI_39144  # Lewis base
+http://purl.obolibrary.org/obo/CHEBI_40574  # acetyl group
+http://purl.obolibrary.org/obo/CHEBI_42485  # formyl group
+http://purl.obolibrary.org/obo/CHEBI_43176  # hydroxy group
+http://purl.obolibrary.org/obo/CHEBI_46883  # carboxy group
+http://purl.obolibrary.org/obo/CHEBI_48819  # cyano group
+http://purl.obolibrary.org/obo/CHEBI_51100  # sulfonyl groups
+http://purl.obolibrary.org/obo/CHEBI_51142  # amino groups
+http://purl.obolibrary.org/obo/CHEBI_51870  # boryl group
+http://purl.obolibrary.org/obo/CHEBI_52214  # ligand
+http://purl.obolibrary.org/obo/CHEBI_53512  # diblock copolymer
+http://purl.obolibrary.org/obo/CHEBI_53513  # triblock copolymer
+http://purl.obolibrary.org/obo/CHEBI_53516  # statistical copolymer
+http://purl.obolibrary.org/obo/CHEBI_53517  # alternating copolymer
+http://purl.obolibrary.org/obo/CHEBI_53518  # graft polymer macromolecule
+http://purl.obolibrary.org/obo/CHEBI_53519  # graft copolymer
+http://purl.obolibrary.org/obo/CHEBI_53520  # periodic copolymer
+http://purl.obolibrary.org/obo/CHEBI_53521  # random copolymer
+http://purl.obolibrary.org/obo/CHEBI_53522  # tactic macromolecule
