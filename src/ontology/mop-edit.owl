@@ -3757,12 +3757,6 @@ SubObjectPropertyOf(obo:MOP_0000769 obo:RO_0002213)
 #   Classes
 ############################
 
-# Class: obo:BFO_0000144 (process profile)
-
-AnnotationAssertion(oboInOwl:id obo:BFO_0000144 "BFO:0000144")
-AnnotationAssertion(rdfs:label obo:BFO_0000144 "process profile")
-SubClassOf(obo:BFO_0000144 obo:BFO_0000015)
-
 # Class: obo:CHEBI_24431 (chemical entity)
 
 SubClassOf(obo:CHEBI_24431 obo:BFO_0000040)
