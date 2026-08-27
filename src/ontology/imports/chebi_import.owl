@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/mop/imports/chebi_import.owl>
-<http://purl.obolibrary.org/obo/mop/releases/2026-08-20/imports/chebi_import.owl>
+<http://purl.obolibrary.org/obo/mop/releases/2026-08-27/imports/chebi_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/chebi/254/chebi.owl>)
-Annotation(owl:versionInfo "2026-08-20")
+Annotation(owl:versionInfo "2026-08-27")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_138675>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_15339>))
@@ -54,7 +54,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_32877>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_32952>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_32955>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33238>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33242>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33245>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33246>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33247>))
@@ -106,7 +105,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_36916>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_36962>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_36963>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_37175>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_37176>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_37407>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_37527>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_37577>))
@@ -877,16 +875,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33238> "monoatomic entity")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33238> <http://purl.obolibrary.org/obo/CHEBI_33259>)
 
-# Class: <http://purl.obolibrary.org/obo/CHEBI_33242> (inorganic hydride)
-
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/CHEBI_33242> "chebi_ontology")
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "chebi") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_33242> "inorganic hydrides")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHEBI_33242> "CHEBI:33242")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CHEBI_33242> <http://purl.obolibrary.org/obo/chebi/3_STAR>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33242> "inorganic hydride")
-SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33242> <http://purl.obolibrary.org/obo/CHEBI_24835>)
-SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33242> <http://purl.obolibrary.org/obo/CHEBI_33692>)
-
 # Class: <http://purl.obolibrary.org/obo/CHEBI_33245> (organic fundamental parent)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_33245> "An organic fundamental parent is a structure used as a basis for substitutive names in organic nomenclature, containing, in addition to one or more hydrogen atoms, a single atom of an element, a number of atoms (alike or different) linked together to form an unbranched chain, a monocyclic or polycyclic ring system, or a ring assembly or ring/chain system.")
@@ -1535,18 +1523,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CHEBI_37175> <http://purl.obolibrary.org/obo/chebi/3_STAR>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_37175> "organic hydride")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_37175> <http://purl.obolibrary.org/obo/CHEBI_33692>)
-
-# Class: <http://purl.obolibrary.org/obo/CHEBI_37176> (mononuclear parent hydride)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "IUPAC") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/chebi/IUPAC_NAME>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHEBI_37176> "mononuclear parent hydrides")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/CHEBI_37176> "chebi_ontology")
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "chebi") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_37176> "mononuclear hydride")
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "iupac") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_37176> "mononuclear hydrides")
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "iupac") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/chebi/IUPAC_NAME>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_37176> "mononuclear parent hydrides")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHEBI_37176> "CHEBI:37176")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CHEBI_37176> <http://purl.obolibrary.org/obo/chebi/3_STAR>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_37176> "mononuclear parent hydride")
-SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_37176> <http://purl.obolibrary.org/obo/CHEBI_33692>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_37407> (cyclic ether)
 
