@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                e8b33d39d4e0a1a0855a51a160956565ac5eaafff771436358e028aa5fcd51a8
+CONFIG_HASH=                fc694a062ebf08c82b6f8a14fe7258c43b0b6fcf80cf85d8a9ca020d2ab6330e
 
 
 # ----------------------------------------
@@ -409,14 +409,11 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms.txt \
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
-## Module for ontology: bfo (mirror)
-$(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl | all_robot_plugins
-	$(ROBOT) annotate --input $< --remove-annotations \
-		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
-		               --subset-decls true --synonym-decls true \
-		               --add-source true \
-		 repair --merge-axiom-annotations true \
-		 $(ANNOTATE_CONVERT_FILE)
+## Module for ontology: bfo (custom)
+$(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl
+	@echo "ERROR: You have configured bfo as a custom module;"
+	@echo "       This rule needs to be overwritten in mop.Makefile!"
+	@false
 
 ## Module for ontology: chebi (custom)
 ifeq ($(IMP_LARGE),true)
