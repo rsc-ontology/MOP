@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                e8b33d39d4e0a1a0855a51a160956565ac5eaafff771436358e028aa5fcd51a8
+CONFIG_HASH=                9ea9d842c654da7e461d16e788c4878474c942d8653268215034f8cb89869da5
 
 
 # ----------------------------------------
@@ -668,6 +668,8 @@ update_repo:
 	odk.py update
 	
 
+update_docs:
+	mkdocs gh-deploy --config-file ../../mkdocs.yaml
 
 # Note to future generations: computing the real path relative to the
 # current directory is a way to ensure we only clean up directories that

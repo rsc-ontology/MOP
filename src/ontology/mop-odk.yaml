@@ -7,6 +7,8 @@ contributors: null
 create_obo_metadata: true
 creators: null
 description: None
+documentation:
+  documentation_system: mkdocs
 edit_format: owl
 id: mop
 title: "Molecular Process Ontology"
