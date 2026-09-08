@@ -10,7 +10,7 @@ description: None
 edit_format: owl
 id: mop
 title: "Molecular Process Ontology"
-github_org: rsc-ontologies
+github_org: rsc-ontology
 repo: mop
 report_fail_on: ERROR
 export_formats:
