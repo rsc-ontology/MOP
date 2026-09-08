@@ -18,8 +18,8 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
 
-site_url: https://rsc-ontologies.github.io/rxno/
-repo_url: https://github.com/rsc-ontologies/rxno/
+site_url: https://rsc-ontologies.github.io/mop/
+repo_url: https://github.com/rsc-ontology/mop/
 
 nav:
   - Getting started: index.md
