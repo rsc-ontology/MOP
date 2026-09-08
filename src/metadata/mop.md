@@ -3,10 +3,10 @@ layout: ontology_detail
 id: mop
 title: Molecular Process Ontology
 jobs:
-  - id: https://travis-ci.org/rsc-ontologies/rxno
+  - id: https://travis-ci.org/rsc-ontology/mop/
     type: travis-ci
 build:
-  checkout: git clone https://github.com/rsc-ontologies/rxno.git
+  checkout: git clone https://github.com/rsc-ontology/mop/.git
   system: git
   path: "."
 contact:
@@ -15,7 +15,7 @@ contact:
   github: 
 description: Molecular Process Ontology is an ontology...
 domain: stuff
-homepage: https://github.com/rsc-ontologies/rxno
+homepage: https://github.com/rsc-ontology/mop/
 products:
   - id: mop.owl
     name: "Molecular Process Ontology main release in OWL format"
@@ -35,7 +35,7 @@ dependencies:
 - id: iao
 - id: omo
 - id: chebi
-tracker: https://github.com/rsc-ontologies/rxno/issues
+tracker: https://github.com/rsc-ontology/mop//issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY

@@ -4,8 +4,8 @@ idspace: MOP
 base_url: /obo/mop
 
 products:
-- mop.owl: https://raw.githubusercontent.com/rsc-ontologies/rxno/main/mop.owl
-- mop.obo: https://raw.githubusercontent.com/rsc-ontologies/rxno/main/mop.obo
+- mop.owl: https://raw.githubusercontent.com/rsc-ontology/mop/main/mop.owl
+- mop.obo: https://raw.githubusercontent.com/rsc-ontology/mop/main/mop.obo
 
 term_browser: ontobee
 example_terms:
@@ -14,15 +14,15 @@ example_terms:
 entries:
 
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/rsc-ontologies/rxno/v
+  replacement: https://raw.githubusercontent.com/rsc-ontology/mop/v
 
 - prefix: /tracker/
-  replacement: https://github.com/rsc-ontologies/rxno/issues
+  replacement: https://github.com/rsc-ontology/mop/issues
 
 - prefix: /about/
   replacement: http://www.ontobee.org/ontology/MOP?iri=http://purl.obolibrary.org/obo/
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
-  replacement: https://raw.githubusercontent.com/rsc-ontologies/rxno/main/
+  replacement: https://raw.githubusercontent.com/rsc-ontology/mop/main/
 
