@@ -17,7 +17,7 @@ These are the current imports in MOP
 | Import | URL | Type |
 | ------ | --- | ---- |
 | ro | http://purl.obolibrary.org/obo/ro.owl | slme |
-| bfo | http://purl.obolibrary.org/obo/bfo.owl | mirror |
+| bfo | http://purl.obolibrary.org/obo/bfo.owl | custom |
 | iao | http://purl.obolibrary.org/obo/iao.owl | slme |
 | omo | http://purl.obolibrary.org/obo/omo.owl | slme |
 | chebi | http://purl.obolibrary.org/obo/chebi.owl | custom |
