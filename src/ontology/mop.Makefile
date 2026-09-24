@@ -44,7 +44,7 @@ $(IMPORTDIR)/chebi_import.owl: $(IMPORTDIR)/chebi_terms.txt $(IMPORTSEED) | all_
 # which would otherwise be pulled in by the ROBOT extract step.
 
 $(IMPORTDIR)/iao_import.owl: $(IMPORTDIR)/iao_terms.txt $(IMPORTSEED) | all_robot_plugins
-	$(ROBOT) annotate --input $(MIRRORDIR)/iao.owl --remove-annotations \
+    if [ $(IMP) = true ]; then $(ROBOT) annotate --input $(MIRRORDIR)/iao.owl --remove-annotations \
 		 odk:normalize --add-source true \
 		 extract --term-file $(IMPORTDIR)/iao_terms.txt $(T_IMPORTSEED) \
 		         --force true --copy-ontology-annotations true \
@@ -57,4 +57,4 @@ $(IMPORTDIR)/iao_import.owl: $(IMPORTDIR)/iao_terms.txt $(IMPORTSEED) | all_robo
 		 odk:normalize --base-iri http://semanticscience.org/ontology \
 		               --subset-decls true --synonym-decls true \
 		 repair --merge-axiom-annotations true \
-		 $(ANNOTATE_CONVERT_FILE)
+		 $(ANNOTATE_CONVERT_FILE); fi 
