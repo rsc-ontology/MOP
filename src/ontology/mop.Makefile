@@ -37,3 +37,24 @@ $(IMPORTDIR)/chebi_import.owl: $(IMPORTDIR)/chebi_terms.txt $(IMPORTSEED) | all_
                 --subset-decls true --synonym-decls true \
          repair --merge-axiom-annotations true \
          $(ANNOTATE_CONVERT_FILE); fi 
+
+## Module for ontology: iao
+# This is basically the default SLME-BOT code from ODK with an additional 
+# remove steps. This second remove step removes currently unused IAO terms,
+# which would otherwise be pulled in by the ROBOT extract step.
+
+$(IMPORTDIR)/iao_import.owl: $(IMPORTDIR)/iao_terms.txt $(IMPORTSEED) | all_robot_plugins
+	$(ROBOT) annotate --input $(MIRRORDIR)/iao.owl --remove-annotations \
+		 odk:normalize --add-source true \
+		 extract --term-file $(IMPORTDIR)/iao_terms.txt $(T_IMPORTSEED) \
+		         --force true --copy-ontology-annotations true \
+		         --individuals exclude \
+		         --method BOT \
+		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
+		        --term-file $(IMPORTDIR)/iao_terms.txt $(T_IMPORTSEED) \
+		        --select complement --select annotation-properties \
+		 remove -T $(IMPORTDIR)/iao_remove_list.txt --select "self descendants individuals" --signature true \
+		 odk:normalize --base-iri http://semanticscience.org/ontology \
+		               --subset-decls true --synonym-decls true \
+		 repair --merge-axiom-annotations true \
+		 $(ANNOTATE_CONVERT_FILE)

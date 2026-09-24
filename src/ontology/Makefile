@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                d184d07325625a5f05959d565c15da36d1b85de6117713ec57041286429260f8
+CONFIG_HASH=                d0c9337b3d7f6abf7de7bbd52226fc7186ee87f00229b554f357fc3864a0d6d3
 
 
 # ----------------------------------------
@@ -415,6 +415,21 @@ $(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl
 	@echo "       This rule needs to be overwritten in mop.Makefile!"
 	@false
 
+## Module for ontology: iao (custom)
+$(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl
+	@echo "ERROR: You have configured iao as a custom module;"
+	@echo "       This rule needs to be overwritten in mop.Makefile!"
+	@false
+
+## Module for ontology: omo (mirror)
+$(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl | all_robot_plugins
+	$(ROBOT) annotate --input $< --remove-annotations \
+		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
+		               --subset-decls true --synonym-decls true \
+		               --add-source true \
+		 repair --merge-axiom-annotations true \
+		 $(ANNOTATE_CONVERT_FILE)
+
 ## Module for ontology: chebi (custom)
 ifeq ($(IMP_LARGE),true)
 $(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl
@@ -485,7 +500,7 @@ mirror-iao: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/omo.owl
 mirror-omo: | $(TMPDIR)
 	curl -L $(OBOBASE)/omo.owl --create-dirs -o $(TMPDIR)/omo-download.owl --retry 4 --max-time 200 && \
-	$(ROBOT) remove -i $(TMPDIR)/omo-download.owl --base-iri http://purl.obolibrary.org/obo/OMO --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
+	$(ROBOT) convert -i $(TMPDIR)/omo-download.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: chebi
