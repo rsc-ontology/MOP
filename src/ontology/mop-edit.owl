@@ -20,7 +20,7 @@ Import(<http://purl.obolibrary.org/obo/mop/imports/ro_import.owl>)
 Annotation(dcterms:date "01:02:2022 11:15")
 Annotation(dcterms:description "MOP is the molecular process ontology. It contains the molecular processes that underlie the name reaction ontology RXNO, for example cyclization, methylation and demethylation.")
 Annotation(dcterms:license <http://creativecommons.org/licenses/by/4.0/>)
-Annotation(dcterms:title "MOP")
+Annotation(dcterms:title "Molecular Process Ontology (MOP)")
 Annotation(oboInOwl:hasOBOFormatVersion "1.2")
 
 Declaration(Class(obo:MOP_0000000))
