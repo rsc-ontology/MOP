@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                9ea9d842c654da7e461d16e788c4878474c942d8653268215034f8cb89869da5
+CONFIG_HASH=                d0c9337b3d7f6abf7de7bbd52226fc7186ee87f00229b554f357fc3864a0d6d3
 
 
 # ----------------------------------------
@@ -409,8 +409,20 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms.txt \
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
-## Module for ontology: bfo (mirror)
-$(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl | all_robot_plugins
+## Module for ontology: bfo (custom)
+$(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl
+	@echo "ERROR: You have configured bfo as a custom module;"
+	@echo "       This rule needs to be overwritten in mop.Makefile!"
+	@false
+
+## Module for ontology: iao (custom)
+$(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl
+	@echo "ERROR: You have configured iao as a custom module;"
+	@echo "       This rule needs to be overwritten in mop.Makefile!"
+	@false
+
+## Module for ontology: omo (mirror)
+$(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl | all_robot_plugins
 	$(ROBOT) annotate --input $< --remove-annotations \
 		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
 		               --subset-decls true --synonym-decls true \
@@ -488,7 +500,7 @@ mirror-iao: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/omo.owl
 mirror-omo: | $(TMPDIR)
 	curl -L $(OBOBASE)/omo.owl --create-dirs -o $(TMPDIR)/omo-download.owl --retry 4 --max-time 200 && \
-	$(ROBOT) remove -i $(TMPDIR)/omo-download.owl --base-iri http://purl.obolibrary.org/obo/OMO --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
+	$(ROBOT) convert -i $(TMPDIR)/omo-download.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: chebi

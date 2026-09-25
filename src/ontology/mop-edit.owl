@@ -20,7 +20,7 @@ Import(<http://purl.obolibrary.org/obo/mop/imports/ro_import.owl>)
 Annotation(dcterms:date "01:02:2022 11:15")
 Annotation(dcterms:description "MOP is the molecular process ontology. It contains the molecular processes that underlie the name reaction ontology RXNO, for example cyclization, methylation and demethylation.")
 Annotation(dcterms:license <http://creativecommons.org/licenses/by/4.0/>)
-Annotation(dcterms:title "MOP")
+Annotation(dcterms:title "Molecular Process Ontology (MOP)")
 Annotation(oboInOwl:hasOBOFormatVersion "1.2")
 
 Declaration(Class(obo:MOP_0000000))
@@ -3701,15 +3701,15 @@ AnnotationAssertion(rdfs:label oboInOwl:SynonymTypeProperty "synonym_type_proper
 
 AnnotationAssertion(rdfs:label oboInOwl:hasAlternativeId "has_alternative_id")
 
-# Annotation Property: oboInOwl:hasDbXref (database_cross_reference)
+# Annotation Property: oboInOwl:hasDbXref (has cross-reference)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasDbXref "database_cross_reference")
 
-# Annotation Property: oboInOwl:hasExactSynonym (has_exact_synonym)
+# Annotation Property: oboInOwl:hasExactSynonym (has exact synonym)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasExactSynonym "has_exact_synonym")
 
-# Annotation Property: oboInOwl:hasNarrowSynonym (has_narrow_synonym)
+# Annotation Property: oboInOwl:hasNarrowSynonym (has narrow synonym)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasNarrowSynonym "has_narrow_synonym")
 
@@ -3721,7 +3721,7 @@ AnnotationAssertion(rdfs:label oboInOwl:hasOBOFormatVersion "has_obo_format_vers
 
 AnnotationAssertion(rdfs:label oboInOwl:hasOBONamespace "has_obo_namespace")
 
-# Annotation Property: oboInOwl:hasRelatedSynonym (has_related_synonym)
+# Annotation Property: oboInOwl:hasRelatedSynonym (has related synonym)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasRelatedSynonym "has_related_synonym")
 

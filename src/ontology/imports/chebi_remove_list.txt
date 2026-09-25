@@ -19,6 +19,7 @@ http://purl.obolibrary.org/obo/CHEBI_29778 # selenocyanic acid
 http://purl.obolibrary.org/obo/CHEBI_29779 # isoselenocyanic acid
 http://purl.obolibrary.org/obo/CHEBI_33232 # application
 http://purl.obolibrary.org/obo/CHEBI_33233 # fundamental particle
+http://purl.obolibrary.org/obo/CHEBI_33242 # inorganic hydride
 http://purl.obolibrary.org/obo/CHEBI_33250 # atom
 http://purl.obolibrary.org/obo/CHEBI_33261 # organosulfur compound
 http://purl.obolibrary.org/obo/CHEBI_33405 # hydracid
@@ -37,6 +38,7 @@ http://purl.obolibrary.org/obo/CHEBI_36338 # lepton
 http://purl.obolibrary.org/obo/CHEBI_36358 # polyatomic ion
 http://purl.obolibrary.org/obo/CHEBI_36824 # cyano group
 http://purl.obolibrary.org/obo/CHEBI_36833 # tellurocyanic acid
+http://purl.obolibrary.org/obo/CHEBI_37176 # mononuclear parent hydride
 http://purl.obolibrary.org/obo/CHEBI_46629 # oxo group
 http://purl.obolibrary.org/obo/CHEBI_48818 # cyano group
 http://purl.obolibrary.org/obo/CHEBI_50312 # onium compound
